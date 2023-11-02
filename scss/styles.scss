@@ -1,3 +1,14 @@
 body {
-    background-color: greens;
+    
+    width:100%;
+    height:100%;
+    overflow-x: hidden;
+
+    #page-wrap {
+        max-width: 1320px;
+        height:100%;
+        margin: auto;
+    }
+
 }
+

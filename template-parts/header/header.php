@@ -11,7 +11,7 @@
             </div>
 
             <div class="col-5 col-lg-3 order-2 order-lg-2 ps-lg-2 ps-xl-5">
-            <a href="/"><img  src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.svg" alt="Log Reuss Gelenkwellen" class="img-fluid" id="top-logo"/></a>
+            <a href="/"><img  src="<?php bloginfo('stylesheet_directory'); ?>/images/FZ_Olpe_Logo.webp" alt="Autohaus Löhr, Fahrzeugzentrum Olpe" class="img-fluid" id="top-logo"/></a>
             </div>
             <?php $bg = "bg-blue-mobile"; 
             if(!is_front_page( )){
@@ -38,9 +38,9 @@
 
         <div class="row bg-white" id="on-demand-container">
             <div class="col bg-white p-0" id="on-demand"> 
-                <?php get_template_part('template-parts/header/share'); ?> 
+
                 <?php get_template_part('template-parts/header/menu'); ?> 
-                <?php get_template_part('template-parts/header/search'); ?> 
+         
             </div>
            
         </div>
