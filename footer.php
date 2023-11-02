@@ -12,8 +12,7 @@
 ?>
 </footer>
 
-</div>
-<!-- / Pagewrap --> 
+
 
 <?php wp_footer(); ?>
 
