@@ -85,11 +85,7 @@ body header .contact .clock:before {
   padding: 30px 45px;
   display: block;
 }
-#menucontainer ul li.car a:before {
-  content: " ";
-  display: inline-block;
-  background-image: url("../images/icons/fahrzeuge_icon.svg");
-  background-size: 25.8px 14.9px;
+#menucontainer ul li a:before {
   background-repeat: no-repeat;
   width: 26px;
   height: 26px;
@@ -99,7 +95,42 @@ body header .contact .clock:before {
   vertical-align: middle;
   position: relative;
   top: 3px;
+  content: " ";
+  display: inline-block;
+}
+#menucontainer ul li.car a:before {
+  background-image: url("../images/icons/fahrzeuge_icon.svg");
+  background-size: 25.8px 14.9px;
+}
+#menucontainer ul li.service a:before {
+  background-image: url("../images/icons/Service_icon.svg");
+  background-size: 25.8px 14.9px;
+}
+#menucontainer ul li.felge a:before {
+  background-image: url("../images/icons/felge.svg");
+  background-size: 25.8px 14.9px;
+}
+#menucontainer ul li.beschichtung a:before {
+  background-image: url("../images/icons/fahrzeuge_icon.svg");
+  background-size: 25.8px 14.9px;
+}
+#menucontainer ul li.aufbereitung a:before {
+  background-image: url("../images/icons/aufbereitung_icon.svg");
+  background-size: 25.8px 14.9px;
+}
+#menucontainer ul li.kontakt a:before {
+  background-image: url("../images/icons/Kontakt_icon.svg");
+  background-size: 25.8px 14.9px;
 }
 #menucontainer ul li.orange a {
   border-bottom: 8px solid #e8a422;
+}
+#menucontainer ul li.green a {
+  border-bottom: 8px solid #89b459;
+}
+#menucontainer ul li.red a {
+  border-bottom: 8px solid #ea612e;
+}
+#menucontainer ul li.blue a {
+  border-bottom: 8px solid #245861;
 }
