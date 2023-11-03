@@ -134,3 +134,18 @@ body header .contact .clock:before {
 #menucontainer ul li.blue a {
   border-bottom: 8px solid #245861;
 }
+
+.posts-grid {
+  display: grid;
+  font-size: 20px;
+  padding: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 40px;
+}
+.posts-grid .single-post {
+  min-height: 100px;
+  box-shadow: 0 33px 36px 0 rgba(93, 108, 123, 0.08);
+  background-color: #fff;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
