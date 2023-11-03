@@ -1,15 +1,58 @@
+/* barlow-condensed-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "BarlowCondensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/barlow-condensed-v12-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-condensed-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "BarlowBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/barlow-condensed-v12-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
   background-color: #f8fcff;
+  font-family: "BarlowCondensed";
+  font-size: 16px;
+  color: #062b4d;
+}
+body h1, body h2, body h3 {
+  font-family: "BarlowBold";
 }
 body #page-wrap {
   max-width: 1320px;
   height: 100%;
   margin: auto;
 }
+body a {
+  color: #062b4d;
+  text-decoration: none;
+}
+body a:hover {
+  text-decoration: underline;
+}
 body header #menucontainer {
   background-color: #03223e;
   min-height: 50px;
+}
+body header .contact .whatsapp {
+  padding-left: 20px;
+}
+body header .contact .whatsapp:before {
+  content: " ";
+  display: inline-block;
+  background-image: url("../images/icons/whatsapp-glyph-black.svg");
+  background-size: 17.1px 17.1px;
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 17px;
+  vertical-align: text-bottom;
+  margin-right: 20px;
 }

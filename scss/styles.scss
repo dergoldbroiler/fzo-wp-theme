@@ -1,22 +1,5 @@
-body {
-    
-    width:100%;
-    height:100%;
-    overflow-x: hidden;
-    background-color: #f8fcff;
+@import 'includes/fonts';
+@import 'includes/variables';
+@import 'includes/main';
 
-    #page-wrap {
-        max-width: 1320px;
-        height:100%;
-        margin: auto;
-    }
-
-    header {
-        #menucontainer {
-            background-color: #03223e;
-            min-height: 50px;
-        }
-    }
-
-}
 
