@@ -83,6 +83,7 @@ body header .contact .clock:before {
   color: white;
   font-size: 17px;
   padding: 30px 45px;
+  padding-right: 65px;
   display: block;
 }
 #menucontainer ul li a:before {
