@@ -1,7 +1,7 @@
 <header class="container-fluid w-100 p-0" id="header">
   
 
-    <div class="container bg-white py-4" id="header-inner-container">
+    <div class="container py-4" id="header-inner-container">
         <div class="row">
 
             <div class="col-6 col-xl-3">
@@ -15,6 +15,16 @@
         </div>
     </div>    
     
-    <div class="w-100" id="menucontainer"></div>
+    <div class="w-100" id="menucontainer">
+
+        <div class="container">
+        
+
+                    <?php
+                        wp_nav_menu(array('menu' => 'mainmenu', 'menu_id'=>'mainmenu', 'container' => false, 'menu_class' => 'mleft'));
+                    ?>
+            
+        </div>
+    </div>    
 
 </header>

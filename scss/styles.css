@@ -38,10 +38,6 @@ body a {
 body a:hover {
   text-decoration: underline;
 }
-body header #menucontainer {
-  background-color: #03223e;
-  min-height: 50px;
-}
 body header .contact .whatsapp {
   padding-left: 20px;
 }
@@ -55,4 +51,55 @@ body header .contact .whatsapp:before {
   height: 17px;
   vertical-align: text-bottom;
   margin-right: 20px;
+}
+body header .contact .clock {
+  margin-right: 20px;
+}
+body header .contact .clock:before {
+  content: " ";
+  display: inline-block;
+  background-image: url("../images/icons/clock.svg");
+  background-size: 17.1px 17.1px;
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 17px;
+  vertical-align: text-bottom;
+  margin-right: 5px;
+}
+
+#menucontainer {
+  background-color: #03223e;
+  min-height: 50px;
+}
+#menucontainer ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+#menucontainer ul li {
+  padding: 0;
+}
+#menucontainer ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 30px 45px;
+  display: block;
+}
+#menucontainer ul li.car a:before {
+  content: " ";
+  display: inline-block;
+  background-image: url("../images/icons/fahrzeuge_icon.svg");
+  background-size: 25.8px 14.9px;
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 26px;
+  /* vertical-align: sub; */
+  margin-right: 10px;
+  line-height: 26px;
+  vertical-align: middle;
+  position: relative;
+  top: 3px;
+}
+#menucontainer ul li.orange a {
+  border-bottom: 8px solid #e8a422;
 }

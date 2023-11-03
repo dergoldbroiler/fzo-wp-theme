@@ -3,4 +3,8 @@
         <p>Wir beraten Sie gerne:</p>
         <p class="whatsapp"><a href="https://wa.me/4915735980000" target="_blank">02761/ 82870</a></p>
     </div>
+    <div class="d-flex flex-row">
+        <p class="clock text-end">Mo.-Fr.:<br>Sa.:</p>
+        <p class="">08:00 - 17:00 Uhr<br>09:00 - 12:00 Uhr</p>
+    </div>
 </div>
