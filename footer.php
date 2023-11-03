@@ -7,9 +7,7 @@
 
 
 <footer class="container-fluid w-100 bg-1">
-<?php
-    wp_nav_menu(array('menu' => 'footer', 'menu_id'=>'footermenu', 'menu_container' => false));
-?>
+
 </footer>
 
 
