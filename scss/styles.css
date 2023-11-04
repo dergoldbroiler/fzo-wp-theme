@@ -179,6 +179,26 @@ body header .contact .clock:before {
     margin-right: 0 !important;
   }
 }
+.posts-grid .single-post .single-post-image {
+  width: 100%;
+  height: 240px;
+  background-color: #f7f8f8;
+}
+.posts-grid .single-post .single-post-image.bg-contain {
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.posts-grid .single-post .single-post-image.bg-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.posts-grid .single-post .single-post-content {
+  width: 100%;
+  height: 240px;
+  background-color: #fff;
+}
 
 #about-banner {
   min-height: 100px;

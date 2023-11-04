@@ -3,34 +3,11 @@ Fahrzeuge, Felgenreparaturen, Fahrzeugaufbereitung, Beschichtungen, Service und 
 
 <div class="posts-grid p-0 w-100">
 
-        <div class="single-post">
-        
-        </div>
-        <div class="single-post">
-        
-        </div>
-        <div class="single-post">
-        
-        </div>
-
-        <div class="single-post">
-        
-        </div>
-        <div class="single-post">
-        
-        </div>
-        <div class="single-post">
-        
-        </div>
-
-        <div class="single-post">
-        
-        </div>
-        <div class="single-post">
-        
-        </div>
-        <div class="single-post">
-        
-        </div>
+    <?php get_template_part('template-parts/posts/single','', get_field('box_1', 'options')); ?>
+    <?php get_template_part('template-parts/posts/single','', get_field('box_2', 'options')); ?>
+    <?php get_template_part('template-parts/posts/single','', get_field('box_3', 'options')); ?>
+    <?php get_template_part('template-parts/posts/single','', get_field('box_4', 'options')); ?>
+    <?php get_template_part('template-parts/posts/single','', get_field('box_5', 'options')); ?>
+    <?php get_template_part('template-parts/posts/single','', get_field('box_6', 'options')); ?>
    
 </div>
