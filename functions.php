@@ -1,6 +1,6 @@
 <?php
 
-require_once('inc/func_rest_api.php');
+require_once('includes/shortcodes.php');
 
 if ( ! function_exists( 'theme_slug_setup' ) ) :
     /**
