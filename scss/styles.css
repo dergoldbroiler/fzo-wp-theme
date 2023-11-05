@@ -38,6 +38,25 @@ body a {
 body a:hover {
   text-decoration: underline;
 }
+@media (max-width: 1200px) {
+  body header #header-inner-container {
+    background-color: #03223e;
+    max-width: 100%;
+  }
+}
+body header .mobile {
+  display: none;
+}
+@media (max-width: 1200px) {
+  body header .mobile {
+    display: block !important;
+  }
+}
+@media (max-width: 1200px) {
+  body header .contact {
+    display: none !important;
+  }
+}
 body header .contact .whatsapp {
   padding-left: 20px;
 }
@@ -75,6 +94,11 @@ body header .contact .clock:before {
   display: flex;
   list-style: none;
   padding: 0;
+}
+@media (max-width: 1200px) {
+  #menucontainer ul {
+    display: none;
+  }
 }
 #menucontainer ul li {
   padding: 0;

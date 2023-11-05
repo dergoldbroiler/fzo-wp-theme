@@ -1,11 +1,14 @@
 #menucontainer {
-    background-color: #03223e; 
+    background-color: $darkblue;
     min-height: 50px;
 
     ul {
         display: flex;
         list-style: none;
         padding: 0;
+        @media (max-width: 1200px) {
+            display: none;
+         }
         li {
             padding:0;
 

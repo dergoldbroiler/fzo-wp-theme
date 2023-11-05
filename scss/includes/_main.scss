@@ -29,8 +29,25 @@ body {
     }
 
     header {
+
+        #header-inner-container{
+            @media (max-width: 1200px) {
+              background-color: $darkblue;
+              max-width: 100%;
+            }
+        }
+
+        .mobile{
+            display: none;
+            @media (max-width: 1200px) {
+                display: block !important;
+             }
+        }
         
         .contact {
+            @media (max-width: 1200px) {
+               display: none !important;
+            }
        
             .whatsapp{
                 padding-left:20px;
