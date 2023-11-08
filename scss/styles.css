@@ -90,6 +90,12 @@ body header .contact .clock:before {
   background-color: #03223e;
   min-height: 50px;
 }
+@media (max-width: 1200px) {
+  #menucontainer .container {
+    max-width: 100%;
+    padding: 0;
+  }
+}
 #menucontainer ul {
   display: flex;
   list-style: none;
@@ -97,7 +103,8 @@ body header .contact .clock:before {
 }
 @media (max-width: 1200px) {
   #menucontainer ul {
-    display: none;
+    flex-direction: column;
+    max-width: 100%;
   }
 }
 #menucontainer ul li {
@@ -147,17 +154,45 @@ body header .contact .clock:before {
   background-image: url("../images/icons/Kontakt_icon.svg");
   background-size: 25.8px 14.9px;
 }
-#menucontainer ul li.orange a {
-  border-bottom: 8px solid #e8a422;
+@media (min-width: 1201px) {
+  #menucontainer ul li.orange a {
+    border-bottom: 8px solid #e8a422;
+  }
+  #menucontainer ul li.green a {
+    border-bottom: 8px solid #89b459;
+  }
+  #menucontainer ul li.red a {
+    border-bottom: 8px solid #ea612e;
+  }
+  #menucontainer ul li.blue a {
+    border-bottom: 8px solid #245861;
+  }
 }
-#menucontainer ul li.green a {
-  border-bottom: 8px solid #89b459;
+@media (max-width: 1200px) {
+  #menucontainer ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+  }
 }
-#menucontainer ul li.red a {
-  border-bottom: 8px solid #ea612e;
+
+#menuopener {
+  width: 40px;
+  height: 40px;
 }
-#menucontainer ul li.blue a {
-  border-bottom: 8px solid #245861;
+#menuopener #nav-icon {
+  width: 40px;
+  height: 30px;
+}
+#menuopener #nav-icon span {
+  text-align: end;
+  background-color: #fff;
+  width: 40px;
+  height: 3px;
+  margin-bottom: 8px;
+  display: block;
+}
+#menuopener #nav-icon span:nth-child(2) {
+  width: 30px;
+  margin-left: 10px;
 }
 
 .posts-grid {
