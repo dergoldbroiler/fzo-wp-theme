@@ -105,6 +105,13 @@ body header .contact .clock:before {
   #menucontainer ul {
     flex-direction: column;
     max-width: 100%;
+    height: 1px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  #menucontainer ul.open {
+    height: 100vh;
+    overflow: auto;
   }
 }
 #menucontainer ul li {
@@ -181,8 +188,11 @@ body header .contact .clock:before {
 #menuopener #nav-icon {
   width: 40px;
   height: 30px;
+  margin-top: -10px;
+  cursor: pointer;
 }
 #menuopener #nav-icon span {
+  position: absolute;
   text-align: end;
   background-color: #fff;
   width: 40px;
@@ -190,9 +200,34 @@ body header .contact .clock:before {
   margin-bottom: 8px;
   display: block;
 }
+#menuopener #nav-icon span:nth-child(1) {
+  margin-top: 0;
+}
 #menuopener #nav-icon span:nth-child(2) {
   width: 30px;
   margin-left: 10px;
+  margin-top: 24px;
+}
+#menuopener #nav-icon span:nth-child(3) {
+  margin-top: 48px;
+}
+#menuopener #nav-icon.open span:nth-child(1) {
+  margin-top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+#menuopener #nav-icon.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+#menuopener #nav-icon.open span:nth-child(3) {
+  margin-top: 20px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
 
 .posts-grid {
