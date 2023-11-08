@@ -199,6 +199,7 @@ body header .contact .clock:before {
   height: 3px;
   margin-bottom: 8px;
   display: block;
+  transition: all 0.3s ease-in-out;
 }
 #menuopener #nav-icon span:nth-child(1) {
   margin-top: 0;

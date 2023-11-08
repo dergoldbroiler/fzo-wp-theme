@@ -159,6 +159,7 @@
             height: 3px;
             margin-bottom: 8px;
             display: block;
+            transition: all .3s ease-in-out;
             &:nth-child(1) {
               margin-top:0
              }
