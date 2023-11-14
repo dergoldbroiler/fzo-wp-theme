@@ -37,6 +37,7 @@
                 padding:30px 45px;
                 padding-right:65px;
                 display: block;
+                text-decoration: none;
 
                 &:before{
                     background-repeat: no-repeat;
@@ -59,11 +60,24 @@
 
             &.car {
                 a{
+         
                     &:before{
                         background-image: url('../images/icons/fahrzeuge_icon.svg');
-                        background-size: 25.8px 14.9px;               
+                        background-size: 25.8px 14.9px;  
+                        transition: all .3s ease-in-out;             
+                    }
+                  
+                }
+                &:hover {
+         
+                    a{
+                    &:before{
+                        background-image: url('../images/icons/fahrzeuge_icon_white.svg');         
+                        transition: all .3s ease-in-out;
                     }
                 }
+                }
+               
             }
             &.service {
                 a{
@@ -71,6 +85,15 @@
                         background-image: url('../images/icons/Service_icon.svg');
                         background-size: 25.8px 14.9px;               
                     }
+                }
+                &:hover {
+         
+                    a{
+                    &:before{
+                        background-image: url('../images/icons/Service_icon_white.svg');         
+                        transition: all .3s ease-in-out;
+                    }
+                }
                 }
             }
             &.felge {
@@ -80,14 +103,34 @@
                         background-size: 25.8px 14.9px;               
                     }
                 }
+
+                &:hover {
+         
+                    a{
+                    &:before{
+                        background-image: url('../images/icons/felge_icon_white.svg');         
+                        transition: all .3s ease-in-out;
+                    }
+                }
+                }
             }
 
             &.beschichtung {
                 a{
                     &:before{
-                        background-image: url('../images/icons/fahrzeuge_icon.svg');
+                        background-image: url('../images/icons/Beschichtung_icon.svg');
                         background-size: 25.8px 14.9px;               
                     }
+                }
+
+                &:hover {
+         
+                    a{
+                    &:before{
+                        background-image: url('../images/icons/Beschichtung_icon_white.svg');         
+                        transition: all .3s ease-in-out;
+                    }
+                }
                 }
             }
             &.aufbereitung {
@@ -97,6 +140,16 @@
                         background-size: 25.8px 14.9px;               
                     }
                 }
+
+                &:hover {
+         
+                    a{
+                    &:before{
+                        background-image: url('../images/icons/aufbereitung_icon_white.svg');         
+                        transition: all .3s ease-in-out;
+                    }
+                }
+                }
             }
             &.kontakt {
                 a{
@@ -104,6 +157,16 @@
                         background-image: url('../images/icons/Kontakt_icon.svg');
                         background-size: 25.8px 14.9px;               
                     }
+                }
+
+                &:hover {
+         
+                    a{
+                    &:before{
+                        background-image: url('../images/icons/Kontakt_icon_white.svg');         
+                        transition: all .3s ease-in-out;
+                    }
+                }
                 }
             }
 

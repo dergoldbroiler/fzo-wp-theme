@@ -1,3 +1,12 @@
+a{
+    text-decoration: underline;
+
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+
 .posts-grid {
     display: grid;
     font-size: 20px;
