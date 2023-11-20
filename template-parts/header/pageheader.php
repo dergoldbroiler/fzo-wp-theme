@@ -49,7 +49,10 @@
                 
 
                 <div class="row">
-                    <div class="col-12 bg-white">
+                    <div class="col-12 p-0 mt-5">
+                        <div class="w-100 bg-white px-5 py-4">
+                        <h3 class="fs18 fw500"><?php echo get_post_meta($post->ID, 'headeruberschrift', true); ?></h3>
+                        </div>
                        <?php echo apply_filters('the_content', get_post_meta($post->ID, 'headerinhalt', true)); ?>
                     </div>
                 </div>

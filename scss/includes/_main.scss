@@ -8,7 +8,7 @@ body {
     font-size: 16px;
     color: $copyblue;
 
-    h1, h2, h3 {
+    h1, h2, h3, h4 {
         font-family: 'BarlowBold';
 
         &.topline{
@@ -26,13 +26,22 @@ body {
         &.white {
             color: white;
         }
+        &.fw500{
+            font-weight: 500;
+            font-family: 'BarlowCondensed';
+        }
+        &.fs16{
+            font-size: 16px;
+        }
 
+        &.fs18{
+            font-size: 18px;
+        }
         &.fs36{
             font-size: 36px;
         }
+
     }
-
-
 
     #page-wrap {
         max-width: 1320px;

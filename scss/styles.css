@@ -23,10 +23,10 @@ body {
   font-size: 16px;
   color: #062b4d;
 }
-body h1, body h2, body h3 {
+body h1, body h2, body h3, body h4 {
   font-family: "BarlowBold";
 }
-body h1.topline:before, body h2.topline:before, body h3.topline:before {
+body h1.topline:before, body h2.topline:before, body h3.topline:before, body h4.topline:before {
   content: " ";
   width: 35px;
   height: 5px;
@@ -34,10 +34,20 @@ body h1.topline:before, body h2.topline:before, body h3.topline:before {
   background-color: #e8a422;
   display: block;
 }
-body h1.white, body h2.white, body h3.white {
+body h1.white, body h2.white, body h3.white, body h4.white {
   color: white;
 }
-body h1.fs36, body h2.fs36, body h3.fs36 {
+body h1.fw500, body h2.fw500, body h3.fw500, body h4.fw500 {
+  font-weight: 500;
+  font-family: "BarlowCondensed";
+}
+body h1.fs16, body h2.fs16, body h3.fs16, body h4.fs16 {
+  font-size: 16px;
+}
+body h1.fs18, body h2.fs18, body h3.fs18, body h4.fs18 {
+  font-size: 18px;
+}
+body h1.fs36, body h2.fs36, body h3.fs36, body h4.fs36 {
   font-size: 36px;
 }
 body #page-wrap {
@@ -558,4 +568,46 @@ h2.content-h2:after {
   color: rgba(0, 0, 0, 0.6);
   margin-right: 20px;
   display: block;
+}
+
+#wehiko-app {
+  background-color: #fff;
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
+  margin-top: -20px;
+  margin-bottom: 40px;
+  box-shadow: 0 33px 36px 0 rgba(93, 108, 123, 0.08);
+}
+#wehiko-app:after {
+  content: " ";
+  display: block;
+  background: transparent;
+  height: 20px;
+}
+
+#wehiko-app input {
+  height: 40px;
+  margin: 0 0 0 10px;
+  box-sizing: border-box;
+  outline: none;
+  border: 0;
+  text-overflow: ellipsis;
+  width: 100%;
+  padding: 15px !important;
+  background-color: #fff;
+  max-width: 100%;
+}
+
+div[class*=_dropdown_] {
+  border: 1px solid #000 !important;
+  border-radius: 0 !important;
+  padding: 10px 15px !important;
+  color: rgba(0, 0, 0, 0.5) !important;
+  margin-bottom: 30px;
+}
+
+div[class*=_fineGrain_12ibt_29] {
+  column-gap: 20px !important;
 }
