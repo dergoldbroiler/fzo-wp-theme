@@ -27,3 +27,14 @@ function getPostTypeGrid($atts){
 }
 
 add_shortcode( 'grid', 'getPostTypeGrid' );
+
+
+
+function getSubpages($atts){
+    ob_start();
+    $content .= get_template_part('template-parts/shortcodes/grid','',$atts);
+    $content .= ob_get_clean(); 
+    return $content;  
+}
+
+add_shortcode( 'subpages', 'getSubpages' );

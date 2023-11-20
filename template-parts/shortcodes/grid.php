@@ -1,14 +1,26 @@
-<div class="container-fluid p-0">
-    <div class="row">
-        <?php 
+<?php if( isset ($args['headline'])): ?>
+<?php endif; ?>
 
-            $grid = 4;
+<?php
+    $subpages = get_pages(
+        array(
+            'parent' => $post->ID,
+            'posts_per_page' => '-1'
+        )
+    );
 
-            if(isset($args['grid'])) : 
-                $grid = $args['grid'];
-            endif; 
+
+?>
 
 
-        ?>
-    </div>
-</div>        
+<div class="posts-grid p-0 w-100">
+
+    <?php 
+    
+    foreach ($subpages as $subpage) {
+       
+        get_template_part('template-parts/pages/subpage','', $subpage);
+    }
+ 
+    ?>
+</div>
