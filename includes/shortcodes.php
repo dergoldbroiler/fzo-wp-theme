@@ -17,3 +17,13 @@ function getPartnerBanner($atts){
 }
 
 add_shortcode( 'partnerbanner', 'getPartnerBanner' );
+
+
+function getPostTypeGrid($atts){
+    ob_start();
+    $content .= get_template_part('template-parts/shortcodes/grid','',$atts);
+    $content .= ob_get_clean(); 
+    return $content;  
+}
+
+add_shortcode( 'grid', 'getPostTypeGrid' );

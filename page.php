@@ -1,34 +1,30 @@
-<?php get_header(); ?>
-<?php
-  $categories = get_the_terms( $post->ID, 'category' )
-?>
-<div class="container-fluid p-0 bg-light-blue sub-bg" id="main">
-
-  <article class="container-fluid">
+<?php get_header('pages'); ?>
+<div class="container p-0" id="main">
 
     <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="category-headline"><?php echo $post->post_title; ?></h2> 
-          <hr class="yellow-line" />
+        <div class="col-12">
+            <?php the_content(); ?>
         </div>
-    </div>   
-     
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <?php the_content(); ?>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+        
+        </div>
+    </div>
 
     <div class="row">
-        <div class="col my-4">
-         <?php the_content(); ?>
+        <div class="col-12">
+            
         </div>
-    </div>  
+    </div>
 
     
-</article>
-<div class="row">
-        <div class="col-12">
-          <?php get_template_part('template-parts/posts/postgrid','',array('category' => 'aktuelles', 'title' => 'Aktuelles', 'bg' => '')) ?>
-        </div>
-    </div>    
-</div>
 
-  
+</div>
 
 <?php get_footer(); ?>

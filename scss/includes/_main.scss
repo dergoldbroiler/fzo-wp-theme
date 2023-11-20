@@ -10,6 +10,26 @@ body {
 
     h1, h2, h3 {
         font-family: 'BarlowBold';
+
+        &.topline{
+            &:before {
+                content: " ";
+                width: 35px;
+                height: 5px;
+                margin: 7.8px 16.3px 30.2px 0;
+                background-color: #e8a422;
+                display: block;
+            
+            }
+        }
+
+        &.white {
+            color: white;
+        }
+
+        &.fs36{
+            font-size: 36px;
+        }
     }
 
 
@@ -36,6 +56,8 @@ body {
               max-width: 100%;
             }
         }
+
+
 
         .mobile{
             display: none;
@@ -77,6 +99,22 @@ body {
                     vertical-align: text-bottom;
                     margin-right: 5px;
                 }
+            }
+        }
+
+
+        #headerbackground {
+            height: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin-top: -20px;
+
+            .headercontent {
+                width:100%;
+                height:500px;
+                background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 68%, #000);
+                padding-top: 200px;
             }
         }
     }

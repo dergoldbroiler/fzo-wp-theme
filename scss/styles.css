@@ -26,6 +26,20 @@ body {
 body h1, body h2, body h3 {
   font-family: "BarlowBold";
 }
+body h1.topline:before, body h2.topline:before, body h3.topline:before {
+  content: " ";
+  width: 35px;
+  height: 5px;
+  margin: 7.8px 16.3px 30.2px 0;
+  background-color: #e8a422;
+  display: block;
+}
+body h1.white, body h2.white, body h3.white {
+  color: white;
+}
+body h1.fs36, body h2.fs36, body h3.fs36 {
+  font-size: 36px;
+}
 body #page-wrap {
   max-width: 1320px;
   height: 100%;
@@ -85,6 +99,19 @@ body header .contact .clock:before {
   vertical-align: text-bottom;
   margin-right: 5px;
 }
+body header #headerbackground {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -20px;
+}
+body header #headerbackground .headercontent {
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 68%, #000);
+  padding-top: 200px;
+}
 
 #menucontainer {
   background-color: #03223e;
@@ -100,6 +127,7 @@ body header .contact .clock:before {
   display: flex;
   list-style: none;
   padding: 0;
+  margin-bottom: 20px;
 }
 @media (max-width: 1200px) {
   #menucontainer ul {
@@ -146,7 +174,7 @@ body header .contact .clock:before {
   background-size: 25.8px 14.9px;
   transition: all 0.3s ease-in-out;
 }
-#menucontainer ul li.car:hover a:before {
+#menucontainer ul li.car:hover a:before, #menucontainer ul li.car.current-menu-item a:before {
   background-image: url("../images/icons/fahrzeuge_icon_white.svg");
   transition: all 0.3s ease-in-out;
 }
@@ -202,6 +230,9 @@ body header .contact .clock:before {
     border-bottom: 8px solid #e8a422;
   }
   #menucontainer ul li.orange:hover {
+    background-size: 100% 100%;
+  }
+  #menucontainer ul li.orange.current-menu-item {
     background-size: 100% 100%;
   }
   #menucontainer ul li.green {
