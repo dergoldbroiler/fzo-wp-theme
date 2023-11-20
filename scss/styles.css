@@ -44,6 +44,9 @@ body h1.fw500, body h2.fw500, body h3.fw500, body h4.fw500 {
 body h1.fs16, body h2.fs16, body h3.fs16, body h4.fs16 {
   font-size: 16px;
 }
+body h1.fs23, body h2.fs23, body h3.fs23, body h4.fs23 {
+  font-size: 23px;
+}
 body h1.fs18, body h2.fs18, body h3.fs18, body h4.fs18 {
   font-size: 18px;
 }
@@ -410,6 +413,14 @@ a:hover {
   width: 100%;
   height: 240px;
   background-color: #fff;
+}
+.posts-grid .single-post .imagecontainer {
+  width: 100%;
+  height: 240px;
+  background-color: #f7f8f8;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #about-banner {
