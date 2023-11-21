@@ -394,6 +394,10 @@ a:hover {
     margin-right: 0 !important;
   }
 }
+.posts-grid .single-post .boxicon {
+  width: 35px;
+  height: auto;
+}
 .posts-grid .single-post .single-post-image {
   width: 100%;
   height: 240px;
@@ -414,13 +418,24 @@ a:hover {
   height: 240px;
   background-color: #fff;
 }
+.posts-grid .single-post .single-post-content.subpage-content {
+  height: auto;
+}
+.posts-grid .single-post .single-post-content.subpage-content .teaser {
+  height: 140px;
+}
 .posts-grid .single-post .imagecontainer {
   width: 100%;
   height: 240px;
   background-color: #f7f8f8;
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  transition: all 0.3s ease-in-out;
+}
+.posts-grid .single-post .imagecontainer:hover {
+  transition: all 0.3s ease-in-out;
+  background-size: 105%;
 }
 
 #about-banner {

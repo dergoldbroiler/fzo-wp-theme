@@ -38,3 +38,13 @@ function getSubpages($atts){
 }
 
 add_shortcode( 'subpages', 'getSubpages' );
+
+
+function getContactBoxes($atts){
+    ob_start();
+    $content .= get_template_part('template-parts/shortcodes/contactboxes','',$atts);
+    $content .= ob_get_clean(); 
+    return $content;  
+}
+
+add_shortcode( 'contactboxes', 'getContactBoxes' );
