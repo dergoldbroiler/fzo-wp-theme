@@ -375,6 +375,12 @@ a:hover {
   margin-right: 20px;
   margin-bottom: 20px;
 }
+.posts-grid .single-post a {
+  text-decoration: none;
+}
+.posts-grid .single-post a:hover {
+  text-decoration: underline;
+}
 .posts-grid .single-post:nth-child(3n) {
   margin-right: 0;
 }
@@ -394,9 +400,16 @@ a:hover {
     margin-right: 0 !important;
   }
 }
+.posts-grid .single-post .boximage {
+  height: 100px;
+}
 .posts-grid .single-post .boxicon {
-  width: 35px;
-  height: auto;
+  height: 65px;
+  width: auto;
+  max-width: 60px;
+}
+.posts-grid .single-post .sm-icon {
+  margin-right: 15px;
 }
 .posts-grid .single-post .single-post-image {
   width: 100%;

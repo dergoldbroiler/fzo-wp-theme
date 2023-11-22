@@ -26,6 +26,12 @@ a{
         background-color: #fff;
         margin-right: 20px;
         margin-bottom: 20px;
+        a {
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline,;
+            }
+        }
         &:nth-child(3n) {
             margin-right: 0;
         }
@@ -42,10 +48,16 @@ a{
         @media (max-width: 768px) {
             margin-right: 0 !important;
         }
-
+        .boximage {
+            height: 100px;
+        }
         .boxicon {
-            width: 35px;
-            height: auto;
+            height: 65px;
+            width:  auto;
+            max-width: 60px;
+        }
+        .sm-icon {
+            margin-right: 15px;
         }
 
         .single-post-image{
