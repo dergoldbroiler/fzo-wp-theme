@@ -1,6 +1,6 @@
 
 
-<div class="single-post bg-white p-5 d-flex flex-column justify-content-start h-100 mb-2">
+<div class="single-post bg-white p-5 d-flex flex-column justify-content-start h-100 mb-5">
 <div class="boximage">
         &nbsp;
     </div>

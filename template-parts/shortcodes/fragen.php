@@ -1,6 +1,6 @@
 
 
-<div class="single-post bg-white p-5 d-flex flex-column justify-content-start h-100 mb-2">
+<div class="single-post bg-white p-5 d-flex flex-column justify-content-start h-100 mb-5">
     <div class="boximage">
         <img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/agent_icon.svg" alt="Autohaus Löhr, Fahrzeugzentrum Olpe" class="boxicon my-3" />
     </div>
