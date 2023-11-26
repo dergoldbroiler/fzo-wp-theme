@@ -359,6 +359,19 @@ a:hover {
   padding-top: 40px;
   row-gap: 20px;
 }
+.posts-grid.grid-four {
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 1100px) {
+  .posts-grid.grid-four {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .posts-grid.grid-four {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 @media (max-width: 1100px) {
   .posts-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -451,6 +464,12 @@ a:hover {
   transition: all 0.3s ease-in-out;
   background-size: 105%;
 }
+.posts-grid.grid-four .single-post:nth-child(3n) {
+  margin-right: 20px;
+}
+.posts-grid.grid-four .single-post:nth-child(4n) {
+  margin-right: 0px;
+}
 
 #about-banner {
   min-height: 100px;
@@ -539,6 +558,15 @@ h2.content-h2:after {
   display: block;
   margin: auto;
 }
+h2.kunde {
+  font-size: 16px;
+  font-family: "BarlowBold";
+  text-align: left;
+}
+
+.fs16 * {
+  font-size: 16px;
+}
 
 #servicebar {
   box-shadow: 0 33px 36px 0 rgba(93, 108, 123, 0.08);
@@ -548,6 +576,10 @@ h2.content-h2:after {
 #servicebar img {
   height: 41px;
   width: auto;
+}
+
+.staricon {
+  margin-right: 5px;
 }
 
 /* external stuff*/

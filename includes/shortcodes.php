@@ -18,6 +18,16 @@ function getPartnerBanner($atts){
 
 add_shortcode( 'partnerbanner', 'getPartnerBanner' );
 
+function getKunden($atts){
+    ob_start();
+    $content .= get_template_part('template-parts/shortcodes/kunden','',$atts);
+    $content .= ob_get_clean(); 
+    return $content;  
+}
+
+add_shortcode( 'kunden', 'getKunden' );
+
+
 
 function getPostTypeGrid($atts){
     ob_start();

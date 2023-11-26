@@ -2,6 +2,7 @@
 <?php endif; ?>
 
 <?php
+
     $subpages = get_pages(
         array(
             'parent' => $post->ID,
