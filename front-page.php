@@ -32,17 +32,8 @@
             <?php the_content(); ?>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <?php get_template_part('template-parts/posts/about'); ?>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col-12">
-            <?php get_template_part('template-parts/shortcodes/servicebar'); ?>
-        </div>
-    </div>
+    
 
     
 

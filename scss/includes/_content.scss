@@ -7,6 +7,15 @@ a{
 }
 
 
+.two-columns{
+    column-count:2;
+
+    p {
+        font-size: 18px;
+    }
+}
+
+
 .posts-grid {
     display: grid;
     font-size: 20px;
@@ -222,6 +231,14 @@ h2 {
         }
     }
 
+    &.fs40{
+        font-size: 40px;
+    
+        @media(max-width: 768px){
+            font-size: 30px;
+        }
+    }
+
     &.kunde{
   font-size: 16px;
 font-family: 'BarlowBold';
@@ -235,4 +252,6 @@ font-family: 'BarlowBold';
 .fs16 * {
     font-size: 16px;
 }
+
+
 

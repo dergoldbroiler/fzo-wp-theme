@@ -351,6 +351,13 @@ a:hover {
   text-decoration: none;
 }
 
+.two-columns {
+  column-count: 2;
+}
+.two-columns p {
+  font-size: 18px;
+}
+
 .posts-grid {
   display: grid;
   font-size: 20px;
@@ -557,6 +564,14 @@ h2.content-h2:after {
   background-color: #e8a422;
   display: block;
   margin: auto;
+}
+h2.fs40 {
+  font-size: 40px;
+}
+@media (max-width: 768px) {
+  h2.fs40 {
+    font-size: 30px;
+  }
 }
 h2.kunde {
   font-size: 16px;
