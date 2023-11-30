@@ -10,12 +10,18 @@ const toggleMenu = () => {
 }
 
 
+const shiftContentOnMobiledePage = () => {
+  const wehiko = document.querySelector('.mobile-de-plugin');  
+  document.getElementById("header").style.height = wehiko.clientHeight + 700 + "px";
+}
+
+
 document.addEventListener('DOMContentLoaded', function(e) {
-  toggleMenu();
+  toggleMenu();shiftContentOnMobiledePage()
 });
 
 window.addEventListener('resize', function(e) {
-
+  shiftContentOnMobiledePage()
 });
 
 window.addEventListener('scroll', function(e) {
