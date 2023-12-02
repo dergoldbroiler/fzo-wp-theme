@@ -5,27 +5,28 @@
  */
 ?>
 
-<?php if(is_page('fahrzeuge')): ?>
-    <!-- Kreditformular -->
-    <div class="container-fluid w-100 bg-blue my-5">
-        <div class="container p-5" id="credit">   
+<?php if(is_page('fahrzeuge')) : ?>
+    <div class="container-fluid w-100 bg-lightgrey  p-0 mb-0">
+        <div class="container p-0" id="creditform">   
             <div class="row">
                 <div class="col-12">
-                <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 3 ) ); ?>
+                    <?php  echo do_shortcode('[creditform id="3"]'); ?>
                 </div>
             </div>
-        </div>    
+        </div>  
+       
     </div>
 <?php endif; ?>
 
-<footer class="container-fluid w-100 bg-1">
+<footer class="container-fluid w-100 bg-1 p-0 mb-0">
     <div class="container p-0" id="footercontact">   
         <div class="row">
             <div class="col-12">
                 <?php  echo do_shortcode('[contactboxes]'); ?>
             </div>
         </div>
-    </div>    
+    </div>  
+    <div class="w-100 bg-darkblue  rowmargin m60 mb-0"><br><br></div>  
 </footer>
 
 

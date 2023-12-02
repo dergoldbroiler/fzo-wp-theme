@@ -193,6 +193,19 @@ a{
 .content-60 {
     width: 60%;
 }
+
+.orange-after{
+    &:after{
+        content: " ";
+        width: 35px;
+        height: 5px;
+        margin: 7.8px 16.3px 30.2px 0;
+        background-color: #e8a422;
+        display: block;
+        margin: unset;
+    }
+
+}
 .badgeline{
   font-size: 15px;
   font-weight: normal;
@@ -231,6 +244,21 @@ h2 {
         }
     }
 
+    &.content-start {
+        text-align: start;
+        margin-top:80px;
+        margin-bottom: 40px;
+        &:after{
+            content: " ";
+            width: 35px;
+            height: 5px;
+            margin: 7.8px 16.3px 30.2px 0;
+            background-color: #e8a422;
+            display: block;
+            margin: unset;
+        }
+    }
+
     &.fs40{
         font-size: 40px;
     
@@ -240,8 +268,8 @@ h2 {
     }
 
     &.kunde{
-  font-size: 16px;
-font-family: 'BarlowBold';
+    font-size: 16px;
+    font-family: 'BarlowBold';
   text-align: left;
  
     }
@@ -254,4 +282,54 @@ font-family: 'BarlowBold';
 }
 
 
+a{
+    transition:all 0.3s ease-in-out;
+    &.white {
+        color: white;
+        &:hover{
+            color: rgba(255,255,255,.8);
+        }
+    }
+    &.icon-arrow-white{
+        &:before{
+          content:"";
+          background-image: url('../images/icons/arrow-white.svg');
+          width: 23.8px;
+          height: 23.8px;   
+          display: inline-block;
+          background-size: 23.8px;
+          margin-right: 10px;
+          vertical-align: middle;
+        }
+    }
+}
 
+
+.rowmargin{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    @media screen and (max-width: 992px) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+
+    &.m80{
+        margin-top: 80px;
+        margin-bottom: 80px;
+        @media screen and (max-width: 992px) {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            
+        }
+    }
+    &.m60{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        @media screen and (max-width: 992px) {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            
+        }
+    }
+}

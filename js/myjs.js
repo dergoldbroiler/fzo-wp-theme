@@ -1,3 +1,5 @@
+var headerheight = 0; 
+
 const toggleMenu = () => {
   const menuToggle = document.querySelector('#nav-icon');
   const navigation = document.querySelector('#mainmenu');
@@ -11,8 +13,10 @@ const toggleMenu = () => {
 
 
 const shiftContentOnMobiledePage = () => {
+  headerheight === 0 ? headerheight = document.getElementById("header").clientHeight : headerheight = headerheight;
   const wehiko = document.querySelector('.mobile-de-plugin');  
-  document.getElementById("header").style.height = wehiko.clientHeight + 700 + "px";
+  console.log( wehiko.clientHeight)
+  document.getElementById("header").style.height = wehiko.clientHeight + headerheight + "px";
 }
 
 

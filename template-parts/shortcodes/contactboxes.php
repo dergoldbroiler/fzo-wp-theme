@@ -1,5 +1,5 @@
 
-<div class="posts-grid p-0 w-100">
+<div class="posts-grid p-0 w-100 rowmargin m60">
 
     <?php get_template_part('template-parts/shortcodes/contact'); ?>
     <?php get_template_part('template-parts/shortcodes/fragen'); ?>

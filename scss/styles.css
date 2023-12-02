@@ -26,6 +26,12 @@ body {
 body .bg-blue {
   background-color: rgba(3, 34, 62, 0.3);
 }
+body .bg-darkblue {
+  background-color: rgb(3, 34, 62);
+}
+body .bg-lightgrey {
+  background-color: rgba(3, 34, 62, 0.03);
+}
 body h1, body h2, body h3, body h4 {
   font-family: "BarlowBold";
 }
@@ -53,8 +59,14 @@ body h1.fs23, body h2.fs23, body h3.fs23, body h4.fs23 {
 body h1.fs18, body h2.fs18, body h3.fs18, body h4.fs18 {
   font-size: 18px;
 }
+body h1.fs20, body h2.fs20, body h3.fs20, body h4.fs20 {
+  font-size: 20px;
+}
 body h1.fs36, body h2.fs36, body h3.fs36, body h4.fs36 {
   font-size: 36px;
+}
+body h1.fw600, body h2.fw600, body h3.fw600, body h4.fw600 {
+  font-weight: 600;
 }
 body #page-wrap {
   max-width: 1320px;
@@ -534,6 +546,16 @@ a:hover {
   width: 60%;
 }
 
+.orange-after:after {
+  content: " ";
+  width: 35px;
+  height: 5px;
+  margin: 7.8px 16.3px 30.2px 0;
+  background-color: #e8a422;
+  display: block;
+  margin: unset;
+}
+
 .badgeline {
   font-size: 15px;
   font-weight: normal;
@@ -568,6 +590,20 @@ h2.content-h2:after {
   display: block;
   margin: auto;
 }
+h2.content-start {
+  text-align: start;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+h2.content-start:after {
+  content: " ";
+  width: 35px;
+  height: 5px;
+  margin: 7.8px 16.3px 30.2px 0;
+  background-color: #e8a422;
+  display: block;
+  margin: unset;
+}
 h2.fs40 {
   font-size: 40px;
 }
@@ -586,6 +622,57 @@ h2.kunde {
   font-size: 16px;
 }
 
+a {
+  transition: all 0.3s ease-in-out;
+}
+a.white {
+  color: white;
+}
+a.white:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+a.icon-arrow-white:before {
+  content: "";
+  background-image: url("../images/icons/arrow-white.svg");
+  width: 23.8px;
+  height: 23.8px;
+  display: inline-block;
+  background-size: 23.8px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.rowmargin {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 992px) {
+  .rowmargin {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+.rowmargin.m80 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 992px) {
+  .rowmargin.m80 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+.rowmargin.m60 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 992px) {
+  .rowmargin.m60 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
 #servicebar {
   box-shadow: 0 33px 36px 0 rgba(93, 108, 123, 0.08);
   background: white;
@@ -598,6 +685,54 @@ h2.kunde {
 
 .staricon {
   margin-right: 5px;
+}
+
+#yellowbanner {
+  background-image: url("../images/yellow_banner.webp");
+  min-height: 100px;
+}
+
+input {
+  border-radius: 0 !important;
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=number], input[type=password], textarea {
+  padding: 20px !important;
+}
+
+.frm_primary_label {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+
+*::-webkit-input-placeholder, *::placeholder {
+  font-size: 16px !important;
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.frm_submit {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: flex-end;
+}
+.frm_submit .frm_button_submit {
+  transition: all 0.3s ease-in-out !important;
+  border-radius: 0 !important;
+  border: none !important;
+  background-color: rgb(3, 34, 62) !important;
+  color: white !important;
+  padding: 20px 60px !important;
+  text-transform: uppercase !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+@media (max-width: 992px) {
+  .frm_submit .frm_button_submit {
+    padding: 15px 30px !important;
+  }
+}
+.frm_submit .frm_button_submit:hover {
+  background-color: rgba(3, 34, 62, 0.8) !important;
 }
 
 /* external stuff*/

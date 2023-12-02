@@ -58,3 +58,24 @@ function getContactBoxes($atts){
 }
 
 add_shortcode( 'contactboxes', 'getContactBoxes' );
+
+
+function getNotFoundBanner($atts){
+    ob_start();
+    $content .= get_template_part('template-parts/shortcodes/notfound','',$atts);
+    $content .= ob_get_clean(); 
+    return $content;  
+}
+
+add_shortcode( 'notfound', 'getNotFoundBanner' );
+
+
+
+function getCreditForm($atts){
+    ob_start();
+    $content .= get_template_part('template-parts/shortcodes/creditform','',$atts);
+    $content .= ob_get_clean(); 
+    return $content;  
+}
+
+add_shortcode( 'creditform', 'getCreditForm' );
