@@ -101,6 +101,8 @@ body #header .mobile {
 @media (max-width: 1200px) {
   body #header .mobile {
     display: block !important;
+    position: relative;
+    z-index: 9999;
   }
 }
 @media (max-width: 1200px) {
@@ -333,6 +335,8 @@ body #header .headercontent.more-margin-top {
 #menuopener {
   width: 40px;
   height: 40px;
+  position: relative;
+  z-index: 9999;
 }
 #menuopener #nav-icon {
   width: 40px;

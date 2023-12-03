@@ -6,7 +6,8 @@
     $subpages = get_posts(
         array(
             'post_type' => 'mitarbeiter',
-            'posts_per_page' => '-1'
+            'posts_per_page' => '-1',
+            'order' => 'ASC'
         )
     );
 

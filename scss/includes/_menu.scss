@@ -254,6 +254,8 @@
 #menuopener {
     width: 40px;
     height: 40px;
+    position: relative;
+    z-index: 9999;
   
     #nav-icon {
         width: 40px;
