@@ -1,4 +1,4 @@
-<header class="container-fluid w-100 p-0" id="header">
+<header class="container-fluid w-100 p-0 h-auto" id="header">
   
 
     <div class="container py-4 px-4 px-xl-0" id="header-inner-container">
@@ -21,7 +21,7 @@
     
     <div class="w-100" id="menucontainer">
 
-        <div class="container">
+        <div class="container px-0">
         
 
                     <?php

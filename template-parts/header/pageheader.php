@@ -20,7 +20,7 @@
     
     <div class="w-100" id="menucontainer">
 
-        <div class="container">
+        <div class="container px-0">
         
 
                     <?php
@@ -35,7 +35,9 @@
     ?>
 
     <div class="w-100" id="headerbackground" style="background-image:url('<?php echo $backgroundimage; ?>')">
-        <div class="headercontent">
+    <div class="overlay"></div>
+    </div>
+        <div class="headercontent <?php if(get_post_meta($post->ID, 'headerinhalt', true)): ?>more-margin-top<?php endif; ?>">
 
             <div class="container py-4 px-4 px-xl-0" id="header-inner-content-container">
                 <div class="row">
@@ -51,7 +53,9 @@
                 <div class="row">
                     <div class="col-12 p-0 mt-5">
                         <div class="w-100 bg-white px-5 py-4">
-                        <h3 class="fs18 fw500 pt-4"><?php echo get_post_meta($post->ID, 'headeruberschrift', true); ?></h3>
+                            <?php if(get_post_meta($post->ID, 'headeruberschrift', true)): ?>
+                            <h3 class="fs18 fw500 pt-4"><?php echo get_post_meta($post->ID, 'headeruberschrift', true); ?></h3>
+                            <?php endif; ?>
                         </div>
                        <?php echo apply_filters('the_content', get_post_meta($post->ID, 'headerinhalt', true)); ?>
                     </div>
@@ -60,6 +64,6 @@
                 <?php endif; ?>
             </div>
         </div>
-    </div>
+    
 
 </header>

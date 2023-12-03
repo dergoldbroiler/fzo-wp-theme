@@ -13,11 +13,12 @@ const toggleMenu = () => {
 
 
 const shiftContentOnMobiledePage = () => {
+  return;
 if(document.querySelector('.fahrzeuge') === null) return;
 
   headerheight === 0 ? headerheight = document.getElementById("header").clientHeight : headerheight = headerheight;
   const wehiko = document.querySelector('.mobile-de-plugin');  
-  console.log( wehiko.clientHeight)
+ 
   document.getElementById("header").style.height = wehiko.clientHeight + headerheight + "px";
 }
 

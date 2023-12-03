@@ -50,6 +50,16 @@ function getSubpages($atts){
 add_shortcode( 'subpages', 'getSubpages' );
 
 
+function getTeamMembers($atts){
+    ob_start();
+    $content .= get_template_part('template-parts/shortcodes/team','',$atts);
+    $content .= ob_get_clean(); 
+    return $content;  
+}
+
+add_shortcode( 'team', 'getTeamMembers' );
+
+
 function getContactBoxes($atts){
     ob_start();
     $content .= get_template_part('template-parts/shortcodes/contactboxes','',$atts);
@@ -79,3 +89,23 @@ function getCreditForm($atts){
 }
 
 add_shortcode( 'creditform', 'getCreditForm' );
+
+function getContactForm($atts){
+    ob_start();
+    $content .= get_template_part('template-parts/shortcodes/contactform','',$atts);
+    $content .= ob_get_clean(); 
+    return $content;  
+}
+
+add_shortcode( 'contactform', 'getContactForm' );
+
+
+
+function getInfoRow($atts){
+    ob_start();
+    $content .= get_template_part('template-parts/shortcodes/inforow','',$atts);
+    $content .= ob_get_clean(); 
+    return $content;  
+}
+
+add_shortcode( 'inforow', 'getInfoRow' );

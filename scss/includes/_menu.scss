@@ -1,6 +1,8 @@
 #menucontainer {
     background-color: $darkblue;
     min-height: 50px;
+    position: relative;
+    z-index: 9999;
 
     .container {
         @media(max-width:1200px)

@@ -62,11 +62,17 @@ body h1.fs18, body h2.fs18, body h3.fs18, body h4.fs18 {
 body h1.fs20, body h2.fs20, body h3.fs20, body h4.fs20 {
   font-size: 20px;
 }
+body h1.fs30, body h2.fs30, body h3.fs30, body h4.fs30 {
+  font-size: 30px;
+}
 body h1.fs36, body h2.fs36, body h3.fs36, body h4.fs36 {
   font-size: 36px;
 }
 body h1.fw600, body h2.fw600, body h3.fw600, body h4.fw600 {
   font-weight: 600;
+}
+body h1 .inforow, body h2 .inforow, body h3 .inforow, body h4 .inforow {
+  letter-spacing: 0.64px;
 }
 body #page-wrap {
   max-width: 1320px;
@@ -81,28 +87,31 @@ body a:hover {
   text-decoration: none;
 }
 @media (max-width: 1200px) {
-  body header #header-inner-container {
+  body #header #header-inner-container {
     background-color: #03223e;
     max-width: 100%;
   }
 }
-body header .mobile {
+body #header .headershortcode {
+  margin-top: -40px;
+}
+body #header .mobile {
   display: none;
 }
 @media (max-width: 1200px) {
-  body header .mobile {
+  body #header .mobile {
     display: block !important;
   }
 }
 @media (max-width: 1200px) {
-  body header .contact {
+  body #header .contact {
     display: none !important;
   }
 }
-body header .contact .whatsapp {
+body #header .contact .whatsapp {
   padding-left: 20px;
 }
-body header .contact .whatsapp:before {
+body #header .contact .whatsapp:before {
   content: " ";
   display: inline-block;
   background-image: url("../images/icons/whatsapp-glyph-black.svg");
@@ -113,10 +122,10 @@ body header .contact .whatsapp:before {
   vertical-align: text-bottom;
   margin-right: 20px;
 }
-body header .contact .clock {
+body #header .contact .clock {
   margin-right: 20px;
 }
-body header .contact .clock:before {
+body #header .contact .clock:before {
   content: " ";
   display: inline-block;
   background-image: url("../images/icons/clock.svg");
@@ -127,23 +136,35 @@ body header .contact .clock:before {
   vertical-align: text-bottom;
   margin-right: 5px;
 }
-body header #headerbackground {
-  height: 500px;
+body #header #headerbackground {
+  pointer-events: none;
+  height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin-top: -20px;
 }
-body header #headerbackground .headercontent {
-  width: 100%;
-  height: 500px;
+body #header #headerbackground .overlay {
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 68%, #000);
+  width: 100%;
+  height: 100%;
+}
+body #header .headercontent {
+  width: 100%;
+  height: auto;
+  margin-top: -430px;
+  position: relative;
   padding-top: 200px;
+}
+body #header .headercontent.more-margin-top {
+  margin-top: -500px;
 }
 
 #menucontainer {
   background-color: #03223e;
   min-height: 50px;
+  position: relative;
+  z-index: 9999;
 }
 @media (max-width: 1200px) {
   #menucontainer .container {
@@ -486,6 +507,14 @@ a:hover {
   transition: all 0.3s ease-in-out;
   background-size: 105%;
 }
+.posts-grid .single-post .imagecontainer.image-member {
+  height: 200px;
+  background-size: 105%;
+}
+.posts-grid .single-post .imagecontainer.image-member:hover {
+  transition: all 0.3s ease-in-out;
+  background-size: 108%;
+}
 .posts-grid.grid-four .single-post:nth-child(3n) {
   margin-right: 20px;
 }
@@ -692,11 +721,15 @@ a.icon-arrow-white:before {
   min-height: 100px;
 }
 
-input {
+#inforow {
+  padding: 40px 150px;
+}
+
+input, select {
   border-radius: 0 !important;
 }
 
-input[type=text], input[type=email], input[type=tel], input[type=number], input[type=password], textarea {
+input[type=text], input[type=email], input[type=tel], input[type=number], input[type=password], textarea, select {
   padding: 20px !important;
 }
 
@@ -705,9 +738,20 @@ input[type=text], input[type=email], input[type=tel], input[type=number], input[
   font-weight: 600 !important;
 }
 
-*::-webkit-input-placeholder, *::placeholder {
+*::-webkit-input-placeholder, *::placeholder, select {
   font-size: 16px !important;
   color: rgba(0, 0, 0, 0.5) !important;
+}
+
+select {
+  background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='16' width='16' viewBox='0 0 512 512'%3E%3C!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--%3E%3Cpath d='M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z'/%3E%3C/svg%3E");
+  background-position: right 15px center; /* Change the px value here to change the distance */
+  -moz-appearance: none;
+  position: relative;
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 5px 30px;
 }
 
 .frm_submit {
