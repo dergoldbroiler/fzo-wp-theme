@@ -540,6 +540,11 @@ a:hover {
   background-repeat: no-repeat;
 }
 
+#contact-banner {
+  height: 500px;
+  box-shadow: 0 33px 36px 0 rgba(93, 108, 123, 0.08);
+}
+
 .banner-paragraph {
   font-size: 16px;
   font-weight: normal;
@@ -683,6 +688,16 @@ a.icon-arrow-white:before {
   .rowmargin {
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+}
+.rowmargin.m120 {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+@media screen and (max-width: 992px) {
+  .rowmargin.m120 {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 .rowmargin.m80 {

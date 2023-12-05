@@ -161,8 +161,12 @@ a{
     background-size: contain;
     background-repeat: no-repeat;
 
+    
 }
-
+#contact-banner{
+    height:500px;  
+    box-shadow: 0 33px 36px 0 rgba(93, 108, 123, 0.08);
+}
 .banner-paragraph{
     font-size: 16px;font-weight: normal;
     font-stretch: condensed;
@@ -321,6 +325,16 @@ a{
         margin-top: 20px;
         margin-bottom: 20px;
         
+    }
+
+    &.m120{
+        margin-top:120px;
+        margin-bottom:120px;
+        @media screen and (max-width: 992px) {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            
+        }
     }
 
     &.m80{
