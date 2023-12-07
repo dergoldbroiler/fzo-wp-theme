@@ -306,3 +306,28 @@
           }
     }
 } 
+
+.logofooter {
+    width: 30%;
+    img {
+        width: 100%;
+    }
+
+}
+.menufooter {
+width: 70%;
+#mainmenu {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    li {
+        margin-left: 20px;
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+} 
+}

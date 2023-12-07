@@ -384,6 +384,31 @@ body #header .headercontent.more-margin-top {
   transform: rotate(-135deg);
 }
 
+.logofooter {
+  width: 30%;
+}
+.logofooter img {
+  width: 100%;
+}
+
+.menufooter {
+  width: 70%;
+}
+.menufooter #mainmenu {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.menufooter #mainmenu li {
+  margin-left: 20px;
+}
+.menufooter #mainmenu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 a {
   text-decoration: underline;
 }

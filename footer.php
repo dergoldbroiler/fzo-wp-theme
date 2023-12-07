@@ -26,7 +26,11 @@
             </div>
         </div>
     </div>  
-    <div class="w-100 bg-darkblue  rowmargin m60 mb-0"><br><br></div>  
+    <div class="w-100 bg-darkblue  rowmargin m60 mb-0">
+
+        <?php get_template_part('template-parts/footer/firstline'); ?>
+
+    </div>  
 </footer>
 
 
