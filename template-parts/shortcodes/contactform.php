@@ -6,7 +6,7 @@
 ?>
     <!-- Kontaktformular -->
     <div class="container-fluid w-100 rowmargin m80">
-        <div class="container p-5" id="contactform">   
+        <div class="container p-0" id="contactform">   
             <div class="row">
                 <div class="col-12">
                     <div class="orange-after mb-5 pb-5">

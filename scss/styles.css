@@ -618,6 +618,11 @@ a:hover {
   display: block;
   margin: unset;
 }
+.orange-after.text-center:after {
+  margin: unset;
+  margin: auto;
+  margin-top: 15px;
+}
 
 .badgeline {
   font-size: 15px;
@@ -767,6 +772,11 @@ a.icon-arrow-white:before {
 
 #inforow {
   padding: 40px 150px;
+  box-shadow: 0 33px 36px 0 rgba(93, 108, 123, 0.08);
+}
+
+#contact-banner {
+  box-shadow: 0 33px 36px 0 rgba(93, 108, 123, 0.08);
 }
 
 input, select {

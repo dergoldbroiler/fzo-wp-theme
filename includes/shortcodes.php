@@ -119,3 +119,14 @@ function getInfoRow($atts){
 }
 
 add_shortcode( 'inforow', 'getInfoRow' );
+
+
+
+function getMap($atts){
+    ob_start();
+    $content .= get_template_part('template-parts/shortcodes/map','',$atts);
+    $content .= ob_get_clean(); 
+    return $content;  
+}
+
+add_shortcode( 'gmap', 'getMap' );

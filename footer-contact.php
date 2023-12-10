@@ -17,6 +17,16 @@
        
     </div>
 
+    <div class="container-fluid w-100  p-0 mb-0">
+        <div class="container p-0" id="map-container">   
+            <div class="row">
+                <div class="col-12">
+                    <?php  echo do_shortcode('[gmap]'); ?>
+                </div>
+            </div>
+        </div>  
+       
+    </div>
 
 <footer class="container-fluid w-100 bg-1 p-0 mb-0">
     <div class="container p-0" id="footercontact">   

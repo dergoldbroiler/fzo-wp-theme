@@ -218,6 +218,14 @@ a{
         margin: unset;
     }
 
+    &.text-center{
+        &:after{
+            margin: unset;
+            margin: auto;
+            margin-top: 15px;
+        }
+    }
+
 }
 .badgeline{
   font-size: 15px;
