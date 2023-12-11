@@ -68,6 +68,11 @@ body h1.fs30, body h2.fs30, body h3.fs30, body h4.fs30 {
 body h1.fs36, body h2.fs36, body h3.fs36, body h4.fs36 {
   font-size: 36px;
 }
+@media (max-width: 768px) {
+  body h1.fs36, body h2.fs36, body h3.fs36, body h4.fs36 {
+    font-size: 30px;
+  }
+}
 body h1.fw600, body h2.fw600, body h3.fw600, body h4.fw600 {
   font-weight: 600;
 }
@@ -199,7 +204,7 @@ body #header .headercontent.more-margin-top {
 #menucontainer ul li a {
   color: white;
   font-size: 17px;
-  padding: 30px 45px;
+  padding: 20px 45px;
   padding-right: 65px;
   display: block;
   text-decoration: none;
@@ -749,6 +754,64 @@ a.icon-arrow-white:before {
     margin-top: 30px;
     margin-bottom: 30px;
   }
+}
+
+.modal {
+  z-index: 99999;
+}
+.modal#interim-modal .modal-content {
+  background-color: #4e6377 !important;
+}
+.modal#interim-modal .modal-content .interim-content {
+  width: 400px;
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .modal#interim-modal .modal-content .interim-content {
+    width: 100%;
+    height: 100%;
+  }
+}
+.modal#interim-modal .modal-content .interim-content #modalclose {
+  position: relative;
+  top: -60px;
+  right: -60px;
+}
+.modal#interim-modal .modal-content .interim-content #modalclose button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  .modal#interim-modal .modal-content .interim-content #modalclose {
+    top: 0px;
+    right: 0px;
+  }
+}
+
+p.whatsapp:before {
+  content: " ";
+  display: inline-block;
+  background-image: url("../images/icons/whatsapp-glyph-black.svg");
+  background-size: 17.1px 17.1px;
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 17px;
+  vertical-align: text-bottom;
+  margin-right: 10px;
+}
+p.email:before {
+  content: " ";
+  display: inline-block;
+  background-image: url("../images/icons/mail_icon.svg");
+  background-size: 17.1px 17.1px;
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 17px;
+  vertical-align: text-bottom;
+  margin-right: 10px;
 }
 
 #servicebar {

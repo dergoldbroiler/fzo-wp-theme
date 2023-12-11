@@ -58,6 +58,10 @@ body {
         }
         &.fs36{
             font-size: 36px;
+
+            @media(max-width: 768px){
+                font-size: 30px;
+            }
         }
         &.fw600 {
             font-weight: 600;

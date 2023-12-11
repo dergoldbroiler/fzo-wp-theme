@@ -34,7 +34,7 @@
 </footer>
 
 
-
+<?php get_template_part('template-parts/modalcontent'); ?>
 <?php wp_footer(); ?>
 
 
@@ -42,7 +42,7 @@
 <script src="<?php bloginfo('stylesheet_directory'); ?>/fontawesome/js/all.js"></script>
 <script type="module"  src="<?php bloginfo('stylesheet_directory'); ?>/js/myjs.js"></script>
 <script src="<?php bloginfo('stylesheet_directory'); ?>/js/slick/slick.js"></script>
-
+<script src="<?php bloginfo('stylesheet_directory'); ?>/js/lottie.js"></script>
 
 </body>
 </html>

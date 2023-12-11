@@ -12,23 +12,26 @@ const toggleMenu = () => {
 }
 
 
-const shiftContentOnMobiledePage = () => {
-  return;
-if(document.querySelector('.fahrzeuge') === null) return;
+const triggerModal = () => {
+  const modalTrigger = document.querySelectorAll('.modal-trigger a');
+  const modal = document.querySelector('#interim-modal');
+  const modalClose = document.querySelector('.modal-close');
+modalTrigger.forEach(function(trigger) {
+  trigger.setAttribute('data-bs-toggle', 'modal');
+  trigger.setAttribute('data-bs-target', '#interim-modal');
 
-  headerheight === 0 ? headerheight = document.getElementById("header").clientHeight : headerheight = headerheight;
-  const wehiko = document.querySelector('.mobile-de-plugin');  
- 
-  document.getElementById("header").style.height = wehiko.clientHeight + headerheight + "px";
+  });
 }
 
 
+
 document.addEventListener('DOMContentLoaded', function(e) {
-  toggleMenu();shiftContentOnMobiledePage()
+  toggleMenu();
+  triggerModal();
 });
 
 window.addEventListener('resize', function(e) {
-  shiftContentOnMobiledePage()
+
 });
 
 window.addEventListener('scroll', function(e) {
