@@ -8,7 +8,7 @@
     <div class="mb-1">    
     <div class="d-flex flex-row">
         <p>Telefon:&nbsp;</p>
-        <p class="whatsapp"><a href="tel://4915735980000" target="_blank">02761/ 82870</a></p>
+        <p class=""><a href="tel://4915735980000" target="_blank">02761/ 82870</a></p>
     </div>
     <div class="d-flex flex-row">
         <p class="clock text-end">Mo.-Fr.:<br>Sa.:</p>

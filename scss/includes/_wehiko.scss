@@ -1,5 +1,7 @@
 .mobile-de-plugin{
     width: 100% !important;
+    font-family: BarlowCondensed !important;
+
     .ads{
 
       .carItem{
@@ -83,6 +85,11 @@
         background: transparent;
         height: 20px;
     }
+
+
+   
+
+   
 }
 
 #wehiko-app input {
@@ -105,8 +112,74 @@ div[class*="_dropdown_"]{
     border:1px solid #000 !important;
     border-radius: 0 !important;padding: 10px 15px !important;
     color: rgba(0, 0, 0, 0.5) !important;
-    margin-bottom: 30px;;
+    margin-bottom: 30px;
+    overflow: unset;
 }
 div[class*="_fineGrain_12ibt_29"]{
  column-gap: 20px !important
+}
+
+#wehiko-app div[class*="_dropdown_"] > label {
+    background: white;
+    position: absolute;
+    top: -20px;
+    width: auto;
+    white-space: nowrap;
+    padding-right: 10px;
+    display: block;
+
+    font-family: BarlowCondensed !important;
+  font-size: 14px;
+  color: #000;
+}
+
+._dropdown_8794a_6 {
+   
+        &:after{
+            background-image: url('../images/icons/chevron-down-solid.svg') !important;
+            background-size: 20px;
+            background-repeat: no-repeat;
+            width: 27px;
+            height: 26px;
+            display: block;
+            content: "";
+            position: absolute;
+            right: 10px;
+            pointer-events: none;
+            top: 20px;
+        
+        
+    }
+}
+
+._showFilters_12ibt_89 {
+    font-family: BarlowCondensed !important;
+}
+#_summary_12ibt_1 p {
+   margin-left: -10px;
+}
+
+._items_8794a_39 {
+    margin-top: -30px !important;
+}
+
+#wehiko-app input[type=text] {
+    height: 40px;
+    margin: 0 0 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    text-overflow: ellipsis;
+    width: 120% !important;
+    padding: 0;
+    background-color: #fff;
+    max-width: 120% !important;
+}
+
+._clear_8794a_25{
+    width: 0 !important;
+}
+
+.ad {
+    box-shadow: 0 33px 36px 0 rgba(93, 108, 123, 0.08) !important
 }

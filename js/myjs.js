@@ -24,10 +24,24 @@ modalTrigger.forEach(function(trigger) {
 }
 
 
+const wehiko = () => {
+  const ads = document.querySelectorAll('.mobile-de-plugin .ads');
+
+  ads.forEach( ad => {
+   let link = ad.querySelector('a').getAttribute('href');
+   ad.style = 'cursor: pointer';
+   ad.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open(link, '_blank');
+    });
+  });
+}
+
+
 
 document.addEventListener('DOMContentLoaded', function(e) {
   toggleMenu();
-  triggerModal();
+  triggerModal();wehiko()
 });
 
 window.addEventListener('resize', function(e) {
