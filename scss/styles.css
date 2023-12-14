@@ -110,6 +110,15 @@ body #header .mobile {
     z-index: 9999;
   }
 }
+body #header .contact {
+  padding-right: 50px;
+}
+@media (max-width: 1400px) {
+  body #header .contact {
+    padding-right: 0px;
+    padding-left: 50px;
+  }
+}
 @media (max-width: 1200px) {
   body #header .contact {
     display: none !important;
@@ -228,51 +237,56 @@ body #header .headercontent.more-margin-top {
 #menucontainer ul li.car a:before {
   background-image: url("../images/icons/fahrzeuge_icon.svg");
   background-size: 25.8px 14.9px;
-  transition: all 0.3s ease-in-out;
+  display: inline-block;
 }
 #menucontainer ul li.car:hover a:before, #menucontainer ul li.car.current-menu-item a:before {
   background-image: url("../images/icons/fahrzeuge_icon_white.svg");
-  transition: all 0.3s ease-in-out;
+  display: inline-block;
 }
 #menucontainer ul li.service a:before {
   background-image: url("../images/icons/Service_icon.svg");
   background-size: 25.8px 14.9px;
+  display: inline-block;
 }
-#menucontainer ul li.service:hover a:before {
+#menucontainer ul li.service:hover a:before, #menucontainer ul li.service.current-menu-item a:before {
   background-image: url("../images/icons/Service_icon_white.svg");
-  transition: all 0.3s ease-in-out;
+  display: inline-block;
 }
 #menucontainer ul li.felge a:before {
   background-image: url("../images/icons/felge.svg");
   background-size: 25.8px 14.9px;
+  display: inline-block;
 }
-#menucontainer ul li.felge:hover a:before {
+#menucontainer ul li.felge:hover a:before, #menucontainer ul li.felge.current-menu-item a:before {
   background-image: url("../images/icons/felge_icon_white.svg");
-  transition: all 0.3s ease-in-out;
+  display: inline-block;
 }
 #menucontainer ul li.beschichtung a:before {
   background-image: url("../images/icons/Beschichtung_icon.svg");
   background-size: 25.8px 14.9px;
+  display: inline-block;
 }
-#menucontainer ul li.beschichtung:hover a:before {
+#menucontainer ul li.beschichtung:hover a:before, #menucontainer ul li.beschichtung.current-menu-item a:before {
   background-image: url("../images/icons/Beschichtung_icon_white.svg");
-  transition: all 0.3s ease-in-out;
+  display: inline-block;
 }
 #menucontainer ul li.aufbereitung a:before {
   background-image: url("../images/icons/aufbereitung_icon.svg");
   background-size: 25.8px 14.9px;
+  display: inline-block;
 }
 #menucontainer ul li.aufbereitung:hover a:before {
   background-image: url("../images/icons/aufbereitung_icon_white.svg");
-  transition: all 0.3s ease-in-out;
+  display: inline-block;
 }
 #menucontainer ul li.kontakt a:before {
   background-image: url("../images/icons/Kontakt_icon.svg");
   background-size: 25.8px 14.9px;
+  display: inline-block;
 }
-#menucontainer ul li.kontakt:hover a:before {
+#menucontainer ul li.kontakt:hover a:before, #menucontainer ul li.kontakt.current-menu-item a:before {
   background-image: url("../images/icons/Kontakt_icon_white.svg");
-  transition: all 0.3s ease-in-out;
+  display: inline-block;
 }
 @media (min-width: 1201px) {
   #menucontainer ul li.orange {
@@ -662,6 +676,7 @@ h2.content-h2:after {
   background-color: #e8a422;
   display: block;
   margin: auto;
+  margin-top: 15px;
 }
 h2.content-start {
   text-align: start;
@@ -820,8 +835,9 @@ p.email:before {
   padding: 100px;
 }
 #servicebar img {
-  height: 41px;
+  height: 61px;
   width: auto;
+  margin-bottom: 20px;
 }
 
 .staricon {

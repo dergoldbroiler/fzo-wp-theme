@@ -32,7 +32,7 @@
          }
         li {
             padding:0;
-
+            
             a{
                 color:white;
                 font-size: 17px;
@@ -62,11 +62,11 @@
 
             &.car {
                 a{
-         
+                 
                     &:before{
                         background-image: url('../images/icons/fahrzeuge_icon.svg');
                         background-size: 25.8px 14.9px;  
-                        transition: all .3s ease-in-out;             
+                        display: inline-block;        
                     }
                   
                 }
@@ -75,7 +75,7 @@
                     a{
                     &:before{
                         background-image: url('../images/icons/fahrzeuge_icon_white.svg');         
-                        transition: all .3s ease-in-out;
+                        display: inline-block;;
                     }
                 }
                 }
@@ -85,15 +85,15 @@
                 a{
                     &:before{
                         background-image: url('../images/icons/Service_icon.svg');
-                        background-size: 25.8px 14.9px;               
+                        background-size: 25.8px 14.9px;         display: inline-block;;         
                     }
                 }
-                &:hover {
+                &:hover , &.current-menu-item{
          
                     a{
                     &:before{
                         background-image: url('../images/icons/Service_icon_white.svg');         
-                        transition: all .3s ease-in-out;
+                        display: inline-block;;
                     }
                 }
                 }
@@ -102,16 +102,16 @@
                 a{
                     &:before{
                         background-image: url('../images/icons/felge.svg');
-                        background-size: 25.8px 14.9px;               
+                        background-size: 25.8px 14.9px;       display: inline-block;;           
                     }
                 }
 
-                &:hover {
+                &:hover, &.current-menu-item {
          
                     a{
                     &:before{
                         background-image: url('../images/icons/felge_icon_white.svg');         
-                        transition: all .3s ease-in-out;
+                        display: inline-block;;
                     }
                 }
                 }
@@ -121,16 +121,16 @@
                 a{
                     &:before{
                         background-image: url('../images/icons/Beschichtung_icon.svg');
-                        background-size: 25.8px 14.9px;               
+                        background-size: 25.8px 14.9px;       display: inline-block;;           
                     }
                 }
 
-                &:hover {
+                &:hover, &.current-menu-item {
          
                     a{
                     &:before{
                         background-image: url('../images/icons/Beschichtung_icon_white.svg');         
-                        transition: all .3s ease-in-out;
+                        display: inline-block;;
                     }
                 }
                 }
@@ -139,7 +139,7 @@
                 a{
                     &:before{
                         background-image: url('../images/icons/aufbereitung_icon.svg');
-                        background-size: 25.8px 14.9px;               
+                        background-size: 25.8px 14.9px;        display: inline-block;;          
                     }
                 }
 
@@ -148,7 +148,7 @@
                     a{
                     &:before{
                         background-image: url('../images/icons/aufbereitung_icon_white.svg');         
-                        transition: all .3s ease-in-out;
+                        display: inline-block;;
                     }
                 }
                 }
@@ -157,16 +157,16 @@
                 a{
                     &:before{
                         background-image: url('../images/icons/Kontakt_icon.svg');
-                        background-size: 25.8px 14.9px;               
+                        background-size: 25.8px 14.9px;        display: inline-block;;          
                     }
                 }
 
-                &:hover {
+                &:hover, &.current-menu-item {
          
                     a{
                     &:before{
                         background-image: url('../images/icons/Kontakt_icon_white.svg');         
-                        transition: all .3s ease-in-out;
+                        display: inline-block;;
                     }
                 }
                 }

@@ -6,13 +6,13 @@
 
             <div class="col-9 col-xl-3">
                 <a href="/" class="d-none d-xl-block">
-                    <img  src="<?php bloginfo('stylesheet_directory'); ?>/images/FZ_Olpe_Logo.webp" alt="Autohaus Löhr, Fahrzeugzentrum Olpe" class="img-fluid" id="top-logo"/>
+                    <img  src="<?php bloginfo('stylesheet_directory'); ?>/images/FZ_Olpe_Logo.svg" alt="Autohaus Löhr, Fahrzeugzentrum Olpe" class="img-fluid" id="top-logo"/>
                 </a>
                 <a href="/" class="d-block d-xl-none">
                     <img  src="<?php bloginfo('stylesheet_directory'); ?>/images/FZ_Olpe_Logo_mobile.svg" alt="Autohaus Löhr, Fahrzeugzentrum Olpe" class="img-fluid" id="top-logo"/>
                 </a>
             </div>
-            <div class="col-3 offset-xl-3 col-xl-6">
+            <div class="col-3 offset-xl-3 col-xl-6 offset-xxl-4 col-xxl-5">
                 <?php get_template_part('template-parts/header/contact','',array()) ?>
                 <?php get_template_part('template-parts/header/menubars','',array()) ?>
             </div>

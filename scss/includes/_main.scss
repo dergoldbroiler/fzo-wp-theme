@@ -112,8 +112,17 @@ body {
         }
         
         .contact {
+            padding-right:50px;
+            
+            @media (max-width: 1400px) {
+                padding-right:0px;
+                padding-left:50px;
+ 
+             }
+            
             @media (max-width: 1200px) {
                display: none !important;
+
             }
        
             .whatsapp{
