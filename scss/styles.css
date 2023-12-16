@@ -176,6 +176,12 @@ body #header .headercontent.more-margin-top {
   margin-top: -500px;
 }
 
+.sticky {
+  height: 76px;
+  top: 0;
+  position: fixed !important;
+}
+
 #menucontainer {
   background-color: #03223e;
   min-height: 50px;
@@ -294,7 +300,7 @@ body #header .headercontent.more-margin-top {
     background-image: repeating-linear-gradient(#e8a422, #e8a422 22px, #e8a422 22px, #e8a422 44px);
     background-repeat: no-repeat;
     background-position: bottom;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
   #menucontainer ul li.orange a {
     border-bottom: 8px solid #e8a422;
@@ -310,7 +316,7 @@ body #header .headercontent.more-margin-top {
     background-image: repeating-linear-gradient(#89b459, #89b459 22px, #89b459 22px, #89b459 44px);
     background-repeat: no-repeat;
     background-position: bottom;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
   #menucontainer ul li.green a {
     border-bottom: 8px solid #89b459;
@@ -323,7 +329,7 @@ body #header .headercontent.more-margin-top {
     background-image: repeating-linear-gradient(#ea612e, #ea612e 22px, #ea612e 22px, #ea612e 44px);
     background-repeat: no-repeat;
     background-position: bottom;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
   #menucontainer ul li.red a {
     border-bottom: 8px solid #ea612e;
@@ -604,7 +610,7 @@ a:hover {
 .image-bg {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .banner-button {

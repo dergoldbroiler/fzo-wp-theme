@@ -39,9 +39,21 @@ const wehiko = () => {
 
 
 
+const stickyMenu = () => {
+  const header = document.querySelector('#header-inner-container');
+  const menu = document.querySelector('#menucontainer');
+  const headerHeight = header.offsetHeight;
+  const scrollPosition = window.scrollY;
+  if (scrollPosition > headerHeight) {
+    menu.classList.add('sticky');
+  } else {
+    menu.classList.remove('sticky');
+  }
+}
+
 document.addEventListener('DOMContentLoaded', function(e) {
   toggleMenu();
-  triggerModal();wehiko()
+  triggerModal();wehiko(); stickyMenu();
 });
 
 window.addEventListener('resize', function(e) {
@@ -49,7 +61,7 @@ window.addEventListener('resize', function(e) {
 });
 
 window.addEventListener('scroll', function(e) {
- 
+  stickyMenu();
   
 });
 
