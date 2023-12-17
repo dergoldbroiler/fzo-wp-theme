@@ -8,6 +8,6 @@ Fahrzeuge, Felgenreparaturen, Fahrzeugaufbereitung, Beschichtungen, Service und 
     <?php get_template_part('template-parts/posts/single','', get_field('box_3', 'options')); ?>
     <?php get_template_part('template-parts/posts/single','', get_field('box_4', 'options')); ?>
     <?php get_template_part('template-parts/posts/single','', get_field('box_5', 'options')); ?>
-    <?php get_template_part('template-parts/posts/single','', get_field('box_6', 'options')); ?>
+    <?php get_template_part('template-parts/posts/single-lottie','', get_field('box_6', 'options')); ?>
    
 </div>

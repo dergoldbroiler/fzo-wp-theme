@@ -9,6 +9,10 @@ body {
     color: $copyblue;
 
 
+    #top-logo, .logofooter img {
+        max-width: 80%;
+    }
+
     .bg-blue {
         background-color: rgba(3, 34, 62,.3);
     }

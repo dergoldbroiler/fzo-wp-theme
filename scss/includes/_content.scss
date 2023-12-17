@@ -84,16 +84,21 @@ a{
             width: 100%;
             height: 240px;
             background-color: $lightgrey;
-            
+            transition: all 0.3s ease-in-out;
             &.bg-contain{
-                background-size: auto;
+                background-size: 100%;
                 background-repeat: no-repeat;
                 background-position: center;
             }
             &.bg-cover{
-                background-size: cover;
+                background-size: 100%;
                 background-repeat: no-repeat;
                 background-position: center;
+            }
+
+            &:hover{
+                transition: all 0.3s;
+                background-size: 105%;
             }
         }
         .single-post-content{
