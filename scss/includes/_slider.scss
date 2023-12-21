@@ -1,0 +1,22 @@
+.slick-slide{
+    @media (max-width: 992px) {
+       margin-right: 20px;
+    }
+}
+
+.slick-dots li{
+    width: 55px;
+    height: 3px;
+}
+.slick-dots li button:before {
+    width: 47px; height: 6px;
+    content:"";
+    background-color:#e2e7eb;
+    border-radius: 3px;
+}
+
+.slick-dots li.slick-active button:before {
+    width: 47px;
+    content:"";
+    background-color:#03223e;
+}

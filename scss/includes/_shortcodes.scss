@@ -26,3 +26,38 @@
 #contact-banner {
     box-shadow: 0 33px 36px 0 rgba(93, 108, 123, 0.08);
 }
+
+.partner-content.image-bg {
+    @media(max-width:992px){
+        min-height: 350px;
+        width: 100%;
+        &:after{
+            content:"";
+            display: block;
+            background-image: url('../images/yellow_sidebar.webp');
+            width: 100%;
+            height: 10px;
+            background-size: 100%;
+            position: relative;
+            top:350px
+        }
+    }
+}
+
+#partner-banner {
+    height:500px;  
+    box-shadow: 0 33px 36px 0 rgba(93, 108, 123, 0.08);
+    background-image: url('../images/yellow_sidebar.webp');
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    @media(max-width:992px){
+        height: auto;
+        background-image: none;
+     } 
+    
+}
+
+#partner-banner {
+   
+}

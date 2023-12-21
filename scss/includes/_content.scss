@@ -16,6 +16,12 @@ a{
 }
 
 
+#main{
+    @media(max-width:992px){
+        max-width: 100% !important;
+    }
+}
+
 .posts-grid {
     display: grid;
     font-size: 20px;
@@ -39,12 +45,25 @@ a{
         grid-template-columns: repeat(1, 1fr );
     }
 
+    &#frontpage-posts{
+        display: block;
+        margin-bottom: 30px;
+        @media (min-width: 993px) {
+           display: grid;
+        }
+    }
+
+
+
     .single-post {
         min-height: 100px;
         box-shadow: 0 33px 36px 0 rgba(93, 108, 123, 0.08);
         background-color: #fff;
         margin-right: 20px;
         margin-bottom: 20px;
+        @media (max-width: 992px) {
+           box-shadow: none;
+         }
         a {
             text-decoration: none;
             &:hover {
@@ -158,16 +177,6 @@ a{
     box-shadow: 0 33px 36px 0 rgba(93, 108, 123, 0.08);
 }
 
-#partner-banner {
-    height:500px;  
-    box-shadow: 0 33px 36px 0 rgba(93, 108, 123, 0.08);
-    background-image: url('../images/yellow_sidebar.webp');
-    background-position: left;
-    background-size: contain;
-    background-repeat: no-repeat;
-
-    
-}
 #contact-banner{
     height:500px;  
     box-shadow: 0 33px 36px 0 rgba(93, 108, 123, 0.08);
@@ -206,10 +215,18 @@ a{
 
 .content-40 {
     width: 40%;
+    @media (max-width: 992px) {
+        width: 100%;
+        
+    }
 }
 
 .content-60 {
     width: 60%;
+    @media (max-width: 992px) {
+        width: 100%;
+        
+    }
 }
 
 .orange-after{
