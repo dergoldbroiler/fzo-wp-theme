@@ -48,8 +48,14 @@ a{
     &#frontpage-posts{
         display: block;
         margin-bottom: 30px;
-        @media (min-width: 993px) {
+        @media (min-width: 1201px) {
            display: grid;
+        }
+
+        .slick-slide{
+            @media (max-width: 1200px) {
+                margin: 0 10px !important;
+             }
         }
     }
 
@@ -61,7 +67,7 @@ a{
         background-color: #fff;
         margin-right: 20px;
         margin-bottom: 20px;
-        @media (max-width: 992px) {
+        @media (max-width: 1200px) {
            box-shadow: none;
          }
         a {
@@ -74,19 +80,7 @@ a{
             margin-right: 0;
         }
         
-        @media (max-width: 1100px) {
-            
-            margin-right: 0;
-            &:nth-child(1n) {
-                margin-right: 20px;
-            }
-            &:nth-child(2n) { 
-                margin-right: 0;
-            }
-        }
-        @media (max-width: 768px) {
-            margin-right: 0 !important;
-        }
+    
         .boximage {
             height: 100px;
         }

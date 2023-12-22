@@ -517,9 +517,14 @@ a:hover {
   display: block;
   margin-bottom: 30px;
 }
-@media (min-width: 993px) {
+@media (min-width: 1201px) {
   .posts-grid#frontpage-posts {
     display: grid;
+  }
+}
+@media (max-width: 1200px) {
+  .posts-grid#frontpage-posts .slick-slide {
+    margin: 0 10px !important;
   }
 }
 .posts-grid .single-post {
@@ -529,7 +534,7 @@ a:hover {
   margin-right: 20px;
   margin-bottom: 20px;
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .posts-grid .single-post {
     box-shadow: none;
   }
@@ -542,22 +547,6 @@ a:hover {
 }
 .posts-grid .single-post:nth-child(3n) {
   margin-right: 0;
-}
-@media (max-width: 1100px) {
-  .posts-grid .single-post {
-    margin-right: 0;
-  }
-  .posts-grid .single-post:nth-child(1n) {
-    margin-right: 20px;
-  }
-  .posts-grid .single-post:nth-child(2n) {
-    margin-right: 0;
-  }
-}
-@media (max-width: 768px) {
-  .posts-grid .single-post {
-    margin-right: 0 !important;
-  }
 }
 .posts-grid .single-post .boximage {
   height: 100px;
@@ -1186,11 +1175,18 @@ div[class*=_fineGrain_12ibt_29] {
 
 .ad {
   box-shadow: 0 33px 36px 0 rgba(93, 108, 123, 0.08) !important;
+  margin-bottom: 20px !important;
+}
+@media (max-width: 1200px) {
+  .ad {
+    box-shadow: none !important;
+  }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .slick-slide {
-    margin-right: 20px;
+    box-shadow: none;
+    margin: 0 5px !important;
   }
 }
 

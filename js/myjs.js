@@ -1,5 +1,5 @@
 var headerheight = 0; 
-var sliderbreakpoint = 992;
+var sliderbreakpoint = 1200;
 
 const toggleMenu = () => {
   const menuToggle = document.querySelector('#nav-icon');
@@ -26,14 +26,20 @@ modalTrigger.forEach(function(trigger) {
 
 
 const wehiko = () => {
-  const ads = document.querySelectorAll('.mobile-de-plugin .ads');
+  const ads = document.querySelectorAll('.mobile-de-plugin .ad');
 
   ads.forEach( ad => {
    let link = ad.querySelector('a').getAttribute('href');
    ad.style = 'cursor: pointer';
+    console.log('te', ad.querySelector('.emissionsDetails').innerHTML)
+   if(ad.querySelector('.emissionsDetails').innerHTML == ""){
+
+    ad.querySelector('.emissionsDetails').innerHTML = "&nbsp;"
+  }
    ad.addEventListener('click', function(e) {
       e.preventDefault();
-      window.open(link, '_blank');
+    //  window.open(link, '_blank');
+   
     });
   });
 }
@@ -41,7 +47,7 @@ const wehiko = () => {
 
 
 const stickyMenu = () => {
-  let windowWidth = document.body.clientWidth;
+  let windowWidth = window.innerWidth;
   const header = document.querySelector('#header-inner-container');
   const menu = document.querySelector('#menucontainer');
 
@@ -64,34 +70,104 @@ const stickyMenu = () => {
 
 
 const setFrontpageSliderOnMobile = () => {
-   let windowWidth = document.body.clientWidth;
+   let windowWidth = window.innerWidth;
 
-  if(windowWidth <= sliderbreakpoint && !jQuery('#frontpage-posts').hasClass('slick-initialized')){
+  if(windowWidth <= 1200  && !jQuery('#frontpage-posts').hasClass('slick-initialized')){
     jQuery('#frontpage-posts').slick({
-      slidesToShow: 1,
+      slidesToShow: 2,
       slidesToScroll: 1,
       autoplay: true,
       dots:true,
       arrows:false,
       autoplaySpeed: 2000,
-      centerMode:true
+      centerMode:true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
     });
-  } else {
+  }  else {
+
     if(jQuery('#frontpage-posts').hasClass('slick-initialized')) {
       jQuery('#frontpage-posts').slick('unslick');
     }
-    
+  }
+
+}
+
+
+
+const setCarSlider = () => {
+  let windowWidth = window.innerWidth;
+  if(windowWidth <= 1200  && !jQuery('.ads').hasClass('slick-initialized')){
+    jQuery('.ads').slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      autoplay: true,
+      dots:true,
+      arrows:false,
+      autoplaySpeed: 2000,
+      centerMode:true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
+    });
+  }  else {
+   
+    if(jQuery('.ads').hasClass('slick-initialized')) {
+      jQuery('.ads').slick('unslick');
+    }
+  }
+
+}
+
+
+const isSlider = (element) => {
+ return document.querySelector(element).classList.contains('slick-initialized');
+}
+
+
+const unslickSlider = () => {
+  if(jQuery('#frontpage-posts').hasClass('slick-initialized')) {
+    jQuery('#frontpage-posts').slick('unslick');
+  }
+  if(jQuery('.ads').hasClass('slick-initialized')) {
+    jQuery('.ads').slick('unslick');
   }
   
-}
+ }
 
 document.addEventListener('DOMContentLoaded', function(e) {
   toggleMenu();
-  triggerModal();wehiko(); stickyMenu(); setFrontpageSliderOnMobile();
+  triggerModal();
+  wehiko(); 
+  stickyMenu(); setFrontpageSliderOnMobile();
+  setCarSlider();
 });
 
 window.addEventListener('resize', function(e) {
-  setFrontpageSliderOnMobile();
+  if(!isSlider('#frontpage-posts') && window.innerWidth <= 1200)  {
+    setFrontpageSliderOnMobile();
+  } else {
+    unslickSlider();
+  }
+
+
+  if(!isSlider('.ads') && window.innerWidth <= 1200)  {
+    setCarSlider();
+  } else {
+    unslickSlider();
+  }
+  //setCarSlider();
 });
 
 window.addEventListener('scroll', function(e) {

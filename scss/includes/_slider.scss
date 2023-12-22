@@ -1,6 +1,7 @@
 .slick-slide{
-    @media (max-width: 992px) {
-       margin-right: 20px;
+    @media(max-width:1200px){
+        box-shadow:none;
+        margin:0 5px !important
     }
 }
 
