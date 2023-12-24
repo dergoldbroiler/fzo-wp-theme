@@ -185,6 +185,11 @@ body #header .headercontent.more-margin-top {
   position: fixed !important;
   z-index: 9999;
 }
+@media (max-width: 1400px) {
+  .sticky {
+    height: 74px;
+  }
+}
 
 #menucontainer {
   background-color: #03223e;
@@ -493,7 +498,7 @@ a:hover {
 .posts-grid.grid-four {
   grid-template-columns: repeat(4, 1fr);
 }
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
   .posts-grid.grid-four {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -519,12 +524,21 @@ a:hover {
 }
 @media (min-width: 1201px) {
   .posts-grid#frontpage-posts {
-    display: grid;
+    display: none;
   }
 }
 @media (max-width: 1200px) {
   .posts-grid#frontpage-posts .slick-slide {
     margin: 0 10px !important;
+  }
+}
+.posts-grid#desktop-frontpage-posts {
+  display: none;
+  margin-bottom: 30px;
+}
+@media (min-width: 1201px) {
+  .posts-grid#desktop-frontpage-posts {
+    display: grid;
   }
 }
 .posts-grid .single-post {

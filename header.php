@@ -18,13 +18,10 @@
 	<?php wp_head(); ?>
   
   	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/fontawesome/css/all.css">
-
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
-
-	
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/js/slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/js/slick/slick-theme.css"/>
-	
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/js/slick/slick-theme.css"/>
 	
  
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/scss/styles.css">

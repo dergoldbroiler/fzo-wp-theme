@@ -48,7 +48,7 @@ const wehiko = () => {
 
 const stickyMenu = () => {
   let windowWidth = window.innerWidth;
-  const header = document.querySelector('#header-inner-container');
+  const header = document.querySelector('#header');
   const menu = document.querySelector('#menucontainer');
 
   const headerHeight = header.offsetHeight;
@@ -68,110 +68,64 @@ const stickyMenu = () => {
 }
 
 
-
-const setFrontpageSliderOnMobile = () => {
-   let windowWidth = window.innerWidth;
-
-  if(windowWidth <= 1200  && !jQuery('#frontpage-posts').hasClass('slick-initialized')){
-    jQuery('#frontpage-posts').slick({
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      autoplay: true,
-      dots:true,
-      arrows:false,
-      autoplaySpeed: 2000,
-      centerMode:true,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-          }
-        }
-      ]
-    });
-  }  else {
-
-    if(jQuery('#frontpage-posts').hasClass('slick-initialized')) {
-      jQuery('#frontpage-posts').slick('unslick');
-    }
-  }
-
-}
-
-
-
-const setCarSlider = () => {
-  let windowWidth = window.innerWidth;
-  if(windowWidth <= 1200  && !jQuery('.ads').hasClass('slick-initialized')){
-    jQuery('.ads').slick({
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      autoplay: true,
-      dots:true,
-      arrows:false,
-      autoplaySpeed: 2000,
-      centerMode:true,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-          }
-        }
-      ]
-    });
-  }  else {
-   
-    if(jQuery('.ads').hasClass('slick-initialized')) {
-      jQuery('.ads').slick('unslick');
-    }
-  }
-
-}
-
+/*
+slick slider
+*/
 
 const isSlider = (element) => {
- return document.querySelector(element).classList.contains('slick-initialized');
+  return document.querySelector(element).classList.contains('slick-initialized');
+ }
+
+const setSlickSlider = (element)  => {
+
+  if(document.querySelector(element)){
+    
+    let windowWidth = window.innerWidth;
+
+    if(windowWidth > 1200 && isSlider(element)){
+   //   jQuery(element).slick('unslick');
+    }
+
+    if(windowWidth < 1200 && !isSlider(element)){
+      jQuery(element).slick({
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots:true,
+          arrows:false,
+          autoplaySpeed: 2000,
+          centerMode:true,
+          
+          responsive: [
+        
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 1,
+              }
+            }
+          ]
+        });
+      }  
+    }
 }
 
 
-const unslickSlider = () => {
-  if(jQuery('#frontpage-posts').hasClass('slick-initialized')) {
-    jQuery('#frontpage-posts').slick('unslick');
-  }
-  if(jQuery('.ads').hasClass('slick-initialized')) {
-    jQuery('.ads').slick('unslick');
-  }
-  
- }
 
 document.addEventListener('DOMContentLoaded', function(e) {
   toggleMenu();
   triggerModal();
   wehiko(); 
-  stickyMenu(); setFrontpageSliderOnMobile();
-  setCarSlider();
+  stickyMenu(); 
+  setSlickSlider('#frontpage-posts');
+  setSlickSlider('.ads');
 });
 
 window.addEventListener('resize', function(e) {
-  if(!isSlider('#frontpage-posts') && window.innerWidth <= 1200)  {
-    setFrontpageSliderOnMobile();
-  } else {
-    unslickSlider();
-  }
-
-
-  if(!isSlider('.ads') && window.innerWidth <= 1200)  {
-    setCarSlider();
-  } else {
-    unslickSlider();
-  }
-  //setCarSlider();
+  setSlickSlider('#frontpage-posts'); 
+  setSlickSlider('.ads');
 });
 
 window.addEventListener('scroll', function(e) {
   stickyMenu();
-  
 });
 

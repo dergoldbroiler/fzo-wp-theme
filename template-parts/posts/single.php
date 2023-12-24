@@ -1,6 +1,6 @@
 
 
-<div class="single-post bg-white">
+<div class="single-post bg-white glide__track" class="" data-glide-el="track">
    
         <?php if(isset($args['bild'])): ?>
 
