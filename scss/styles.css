@@ -480,6 +480,11 @@ a:hover {
 .two-columns p {
   font-size: 18px;
 }
+@media (max-width: 1200px) {
+  .two-columns {
+    column-count: unset;
+  }
+}
 
 @media (max-width: 992px) {
   #main {
