@@ -14,6 +14,15 @@
   font-weight: 600;
   src: url("../fonts/barlow-condensed-v12-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #f8fcff;
+  font-family: "BarlowCondensed";
+  font-size: 16px;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -86,6 +95,7 @@ body #page-wrap {
   max-width: 1320px;
   height: 100%;
   margin: auto;
+  overflow-x: hidden;
 }
 body a {
   color: #062b4d;
