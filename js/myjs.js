@@ -14,7 +14,7 @@ const toggleMenu = () => {
 
 
 const triggerModal = () => {
-  const modalTrigger = document.querySelectorAll('.modal-trigger a');
+  const modalTrigger = document.querySelectorAll('.modal-trigger a, .modal-trigger');
   const modal = document.querySelector('#interim-modal');
   const modalClose = document.querySelector('.modal-close');
 modalTrigger.forEach(function(trigger) {

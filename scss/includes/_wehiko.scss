@@ -193,7 +193,11 @@ div[class*="_fineGrain_12ibt_29"]{
     background-color: #fff;
     max-width: 120% !important;
 }
+#wehiko-app input[type=checkbox] {
+    height: 20px !important;
+    width: 20px !important;
 
+}
 ._clear_8794a_25{
     width: 0 !important;
 }
@@ -206,4 +210,9 @@ div[class*="_fineGrain_12ibt_29"]{
 
     }
     margin-bottom: 20px !important;
+}
+
+._items_8794a_39 li {
+    display: flex !important;
+    justify-content: space-between !important;
 }

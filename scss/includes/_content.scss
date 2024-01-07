@@ -38,11 +38,11 @@ a{
             grid-template-columns: repeat(2, 1fr );
         }
         @media (max-width: 768px) {
-            grid-template-columns: repeat(1, 1fr );
+            display: block;
         }
     
     }
-    @media (max-width: 1100px) {
+    @media (max-width: 1300px) {
         grid-template-columns: repeat(2, 1fr );
     }
     @media (max-width: 768px) {
@@ -81,6 +81,10 @@ a{
         @media (max-width: 1200px) {
            box-shadow: none;
          }
+         @media (max-width: 768px) {
+            margin-right: auto;
+            margin-left: auto ;
+        } 
         a {
             text-decoration: none;
             &:hover {
@@ -165,14 +169,22 @@ a{
 
     &.grid-four {
         .single-post{
+            &:nth-child(2n) {
+                 @media(max-width:1300px){
+                    margin-right: 0px;
+                }
+            }
 
-        &:nth-child(3n) {
-            margin-right: 20px;
+            &:nth-child(3n) {
+                margin-right: 20px;
+                @media(max-width:992px){
+                    margin-right: 0px;
+                }
+            }
+            &:nth-child(4n) {
+                margin-right: 0px;
+            }
         }
-        &:nth-child(4n) {
-            margin-right: 0px;
-        }
-    }
     
     }
 }
@@ -397,7 +409,7 @@ a{
 
     &#interim-modal  {
         .modal-content {
-            background-color: #4e6377 !important;
+            background-color: rgba(78, 99, 119,.4) !important;
             
             .interim-content {
                 width: 400px;
@@ -416,7 +428,7 @@ a{
                     top:-60px;
                     right:-60px;
                     button {
-                        background-color: rgba(255,255,255,.1);
+                        background-color: rgba(255,255,255,.3);
                         border-radius: 20px;
                         padding: 10px;
                     }
@@ -466,3 +478,122 @@ p {
         }
     }
 }
+
+
+
+.footer-menu-row{
+    @media(max-width:992px){
+        max-width: 100% !important;
+    }
+}
+
+.single-post-parent{
+    .single-post {
+        min-height: 100px;
+        box-shadow: 0 33px 36px 0 rgba(93, 108, 123, 0.08);
+        background-color: #fff;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        @media (max-width: 1200px) {
+           box-shadow: none;
+         }
+         @media (max-width: 768px) {
+            margin-right: auto;
+            margin-left: auto ;
+        } 
+        a {
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline,;
+            }
+        }
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+        
+    
+        .boximage {
+            height: 100px;
+        }
+        .boxicon {
+            height: 65px;
+            width:  auto;
+            max-width: 60px;
+        }
+        .sm-icon {
+            margin-right: 15px;
+        }
+
+        .single-post-image{
+            width: 100%;
+            height: 240px;
+            background-color: $lightgrey;
+            transition: all 0.3s ease-in-out;
+            &.bg-contain{
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            &.bg-cover{
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            &:hover{
+                transition: all 0.3s;
+                background-size: 105%;
+            }
+        }
+        .single-post-content{
+            width: 100%;
+            height: 240px;
+            background-color: #fff;
+
+            &.subpage-content{
+                .teaser {
+                    height: 140px;
+                }
+                height: auto;
+            }
+        }
+
+        .imagecontainer{
+            width: 100%;
+            height: 240px;
+            background-color: $lightgrey;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: all 0.3s ease-in-out;
+          
+            &:hover{
+                transition: all 0.3s ease-in-out;
+                background-size: 105%;
+            }
+
+            &.image-member{
+                height: 200px;
+                background-size: 105%;
+                &:hover{
+                    transition: all 0.3s ease-in-out;
+                    background-size: 108%;
+                }
+            }
+        }
+    }
+}
+
+
+
+.lg-flex {
+    @media screen and (max-width: 992px) {
+        display: block !important;
+        .wp-block-column {
+            width: 100% !important;
+            text-align: center !important;
+            margin-top: 0 !important;
+        }
+    }
+}
+

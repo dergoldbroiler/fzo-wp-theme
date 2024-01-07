@@ -18,17 +18,21 @@
     </div>
 <?php endif; ?>
 
+
+
 <footer class="container-fluid w-100 bg-1 p-0 mb-0">
-    <div class="container p-0" id="footercontact">   
+    <div class="container p-3 p-lg-0" id="footercontact">   
         <div class="row">
             <div class="col-12">
-                <?php  echo do_shortcode('[contactboxes]'); ?>
+                <?php  echo do_shortcode('[contactboxes type="footer"]'); ?>
             </div>
         </div>
     </div>  
-    <div class="w-100 bg-darkblue  rowmargin m60 mb-0">
+    <div class="w-100 bg-darkblue d-flex flex-column-reverse flex-lg-column rowmargin m60 mb-0">
+
 
         <?php get_template_part('template-parts/footer/firstline'); ?>
+        <?php get_template_part('template-parts/footer/secondline'); ?>
 
     </div>  
 </footer>

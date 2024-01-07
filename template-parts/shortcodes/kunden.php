@@ -1,5 +1,5 @@
 
-<div class="posts-grid grid-four px-5 p-lg-0 w-100">
+<div class="posts-grid grid-four px-4 p-lg-0 w-100">
 
     <?php $kunden = get_posts(array('post_type'=>'kunde','post_status' => 'publish', 'posts_per_page' => 4)); ?>
     <?php foreach($kunden as $kunde): ?>
