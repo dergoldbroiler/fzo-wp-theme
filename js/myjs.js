@@ -83,7 +83,7 @@ const setSlickSlider = (element)  => {
     let windowWidth = window.innerWidth;
 
     if(windowWidth > 1200 && isSlider(element)){
-   //   jQuery(element).slick('unslick');
+      jQuery(element).slick('unslick');
     }
 
     if(windowWidth < 1200 && !isSlider(element)){
@@ -118,11 +118,28 @@ document.addEventListener('DOMContentLoaded', function(e) {
   stickyMenu(); 
   setSlickSlider('#frontpage-posts');
   setSlickSlider('.ads');
+
+  if(document.querySelector('#team')) {
+    setSlickSlider('#team');
+  }
+
+  if(document.querySelector('#subpages')) {
+    setSlickSlider('#subpages');
+  }
 });
 
 window.addEventListener('resize', function(e) {
   setSlickSlider('#frontpage-posts'); 
   setSlickSlider('.ads');
+  
+
+  if(document.querySelector('#team')) {
+    setSlickSlider('#team');
+  }
+
+  if(document.querySelector('#subpages')) {
+    setSlickSlider('#subpages');
+  }
 });
 
 window.addEventListener('scroll', function(e) {

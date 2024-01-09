@@ -15,7 +15,19 @@
 ?>
 
 
-<div class="posts-grid grid-four p-0 w-100 mt-5">
+<div class="posts-grid grid-four p-0 w-100 mt-5 d-xl-none" id="team">
+
+    <?php 
+    
+    foreach ($subpages as $subpage) {
+        
+        get_template_part('template-parts/posts/member','', $subpage);
+    }
+ 
+    ?>
+</div>
+
+<div class="posts-grid grid-four p-0 w-100 mt-5 d-none d-xl-grid">
 
     <?php 
     
