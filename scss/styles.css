@@ -206,13 +206,6 @@ body #header .headercontent.more-margin-top {
   }
 }
 
-@media screen and (max-width: 1200px) {
-  #header-inner-container {
-    position: fixed;
-    z-index: 999;
-  }
-}
-
 #menucontainer {
   background-color: #03223e;
   min-height: 50px;
