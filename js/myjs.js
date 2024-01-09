@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
   wehiko(); 
   stickyMenu(); 
   setSlickSlider('#frontpage-posts');
-  setSlickSlider('.ads');
+ //setSlickSlider('.ads');
 
   if(document.querySelector('#team')) {
     setSlickSlider('#team');
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
 
 window.addEventListener('resize', function(e) {
   setSlickSlider('#frontpage-posts'); 
-  setSlickSlider('.ads');
+ // setSlickSlider('.ads');
   
 
   if(document.querySelector('#team')) {
