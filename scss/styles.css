@@ -1079,6 +1079,15 @@ p.email:before {
   }
 }
 
+.notfound-lottie {
+  width: 300px;
+}
+@media screen and (max-width: 992px) {
+  .notfound-lottie {
+    width: 200px;
+  }
+}
+
 #servicebar {
   box-shadow: 0 33px 36px 0 rgba(93, 108, 123, 0.08);
   background: white;
@@ -1165,6 +1174,16 @@ input[type=text], input[type=email], input[type=tel], input[type=number], input[
   font-size: 20px !important;
   font-weight: 600 !important;
 }
+@media screen and (max-width: 1200px) {
+  .frm_primary_label {
+    font-size: 16px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .frm_primary_label {
+    font-size: 15px !important;
+  }
+}
 
 *::-webkit-input-placeholder, *::placeholder, select {
   font-size: 16px !important;
@@ -1205,6 +1224,15 @@ select {
 }
 .frm_submit .frm_button_submit:hover {
   background-color: rgba(3, 34, 62, 0.8) !important;
+}
+
+@media screen and (max-width: 992px) {
+  .frm4, .frm6, .frm3 {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    grid-column: span 12 !important;
+  }
 }
 
 /* external stuff*/

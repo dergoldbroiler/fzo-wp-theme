@@ -29,16 +29,32 @@ const wehiko = () => {
   const ads = document.querySelectorAll('.mobile-de-plugin .ad');
 
   ads.forEach( ad => {
-   let link = ad.querySelector('a').getAttribute('href');
+   let link = ad.querySelector('h2 a').getAttribute('href');
    ad.style = 'cursor: pointer';
-    console.log('te', ad.querySelector('.emissionsDetails').innerHTML)
+   
+   let caritem = ad.querySelector('h2');
+   let paragraph1 = ad.querySelector('.moreDetails');
+   let paragraph2 = ad.querySelector('.priceRow');
+
    if(ad.querySelector('.emissionsDetails').innerHTML == ""){
 
     ad.querySelector('.emissionsDetails').innerHTML = "&nbsp;"
   }
-   ad.addEventListener('click', function(e) {
+   caritem.addEventListener('click', function(e) {
       e.preventDefault();
-    //  window.open(link, '_blank');
+      window.open(link, '_blank');
+   
+    });
+
+    paragraph1.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open(link, '_blank');
+   
+    });
+
+    paragraph2.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open(link, '_blank');
    
     });
   });

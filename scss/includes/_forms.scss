@@ -9,6 +9,14 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
 .frm_primary_label {
     font-size: 20px !important;
     font-weight: 600 !important;
+    @media screen and (max-width: 1200px) {
+        font-size: 16px !important;
+        
+    }
+    @media screen and (max-width: 992px) {
+        font-size: 15px !important;
+        
+    }
 }
 
 
@@ -52,5 +60,16 @@ select {
         &:hover {
             background-color: rgba(3, 34, 62,.8) !important;
         }
+    }
+}
+
+
+.frm4, .frm6, .frm3 {
+    @media screen and (max-width: 992px) {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: block !important;
+        grid-column: span 12 !important;
+        
     }
 }
