@@ -17,7 +17,7 @@ body {
     font-family: 'BarlowCondensed';
     font-size: 16px;
     color: $copyblue;
-
+    
 
     #top-logo, .logofooter img {
         max-width: 80%;
@@ -221,5 +221,12 @@ body {
 
     @media(max-width:1400px) {
         height: 74px;
+    }
+}
+
+#header-inner-container {
+    @media screen and (max-width: 1200px) {
+        position: fixed;
+        z-index: 999;
     }
 }

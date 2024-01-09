@@ -1,6 +1,8 @@
 <?php /** Template Name: Contact */ ?>
 
 <?php get_header('pages'); ?>
+
+
 <div class="container p-0 rowmargin <?php echo $post->post_name; ?>" id="main">
 
     <div class="row">
@@ -14,4 +16,4 @@
 
 </div>
 
-<?php get_footer('contact'); ?>
+<?php get_footer(); ?>

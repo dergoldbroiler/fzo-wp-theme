@@ -64,21 +64,22 @@ const wehiko = () => {
 
 const stickyMenu = () => {
   let windowWidth = window.innerWidth;
-  const header = document.querySelector('#header');
+
   const menu = document.querySelector('#menucontainer');
 
   const headerHeight = header.offsetHeight;
-  const scrollPosition = window.scrollY;
+  const scrollPosition = document.body.scrollTop;
 
   let sticker = menu;
 
-  if(windowWidth <= 1200) {
-    sticker = header;
-  } 
-
-  if (scrollPosition > headerHeight) {
-    sticker.classList.add('sticky');
-  } else {
+ 
+  if(windowWidth > 1200) {
+    if (scrollPosition > 100) {
+      sticker.classList.add('sticky');
+    } else {
+      sticker.classList.remove('sticky');
+    }
+  }else {
     sticker.classList.remove('sticky');
   }
 }
@@ -158,7 +159,8 @@ window.addEventListener('resize', function(e) {
   }
 });
 
-window.addEventListener('scroll', function(e) {
+document.body.addEventListener('scroll', function(e) {
+  console.log(window.scrollY)
   stickyMenu();
 });
 
