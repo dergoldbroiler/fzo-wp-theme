@@ -628,9 +628,6 @@ a:hover {
 .posts-grid .single-post a:hover {
   text-decoration: underline;
 }
-.posts-grid .single-post:nth-child(3n) {
-  margin-right: 0;
-}
 .posts-grid .single-post .boximage {
   height: 100px;
 }
@@ -702,7 +699,7 @@ a:hover {
 .posts-grid.grid-four .single-post:nth-child(3n) {
   margin-right: 20px;
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .posts-grid.grid-four .single-post:nth-child(3n) {
     margin-right: 0px;
   }
