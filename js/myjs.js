@@ -99,10 +99,10 @@ const setSlickSlider = (element)  => {
     let windowWidth = window.innerWidth;
 
     if(windowWidth > 1200 && isSlider(element)){
-      jQuery(element).slick('unslick');
+     // jQuery(element).slick('unslick');
     }
 
-    if(windowWidth < 1200 && !isSlider(element)){
+    if(!isSlider(element)){
       jQuery(element).slick({
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -116,7 +116,7 @@ const setSlickSlider = (element)  => {
             {
               breakpoint: 992,
               settings: {
-                slidesToShow: 1,
+                slidesToShow: 1,centerMode:false,
               }
             }
           ]

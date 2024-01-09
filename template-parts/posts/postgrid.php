@@ -1,4 +1,4 @@
-<h1 class="text-center m-5 p-5">Das Fahrzeugzentrum Olpe ist Ihr Spezialist rund um
+<h1 class="text-center m-0 m-lg-5 p-5">Das Fahrzeugzentrum Olpe ist Ihr Spezialist rund um
 Fahrzeuge, Felgenreparaturen, Fahrzeugaufbereitung, Beschichtungen, Service und vieles mehr.</h1> 
 
 <div class="posts-grid px-4 px-lg-0 w-100" id="desktop-frontpage-posts">
