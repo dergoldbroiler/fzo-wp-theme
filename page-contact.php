@@ -1,6 +1,4 @@
-<!--
-Template Name: Contact
--->
+<?php /** Template Name: Contact */ ?>
 
 <?php get_header('pages'); ?>
 <div class="container p-0 rowmargin <?php echo $post->post_name; ?>" id="main">
