@@ -93,6 +93,11 @@ a{
          @media (max-width: 768px) {
             margin-right: auto;
             margin-left: auto ;
+
+            &.sub-page-element{
+                margin-right: 1.5rem !important;
+                margin-left: 1.5rem !important;
+            }
         } 
         a {
             text-decoration: none;
@@ -612,4 +617,16 @@ p {
         width: 200px;
         
     }
+}
+
+.sub-page-element {
+    margin-right: 20px;
+    @media screen and (max-width: 992px) {
+        width: auto !important;
+       
+    }
+}
+
+.topheader{
+    pointer-events: all;
 }

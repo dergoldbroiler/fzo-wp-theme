@@ -15,7 +15,7 @@
 ?>
 
 
-<div class="posts-grid grid-four p-0 w-100 mt-5 d-xl-none" id="team">
+<div class="posts-grid grid-four w-auto p-0 mx-4 mx-lg-0 mt-5 d-xl-none" id="team" style="width:unset !important">
 
     <?php 
     

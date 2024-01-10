@@ -109,43 +109,46 @@ body a {
 body a:hover {
   text-decoration: none;
 }
+body #header, body #header-mobile {
+  z-index: 9999;
+}
 @media (max-width: 1200px) {
-  body #header #header-inner-container {
+  body #header #header-inner-container, body #header-mobile #header-inner-container {
     background-color: #03223e;
     max-width: 100%;
   }
 }
-body #header .headershortcode {
+body #header .headershortcode, body #header-mobile .headershortcode {
   margin-top: -40px;
 }
-body #header .mobile {
+body #header .mobile, body #header-mobile .mobile {
   display: none;
 }
 @media (max-width: 1200px) {
-  body #header .mobile {
+  body #header .mobile, body #header-mobile .mobile {
     display: block !important;
     position: relative;
     z-index: 9999;
   }
 }
-body #header .contact {
+body #header .contact, body #header-mobile .contact {
   padding-right: 50px;
 }
 @media (max-width: 1400px) {
-  body #header .contact {
+  body #header .contact, body #header-mobile .contact {
     padding-right: 0px;
     padding-left: 50px;
   }
 }
 @media (max-width: 1200px) {
-  body #header .contact {
+  body #header .contact, body #header-mobile .contact {
     display: none !important;
   }
 }
-body #header .contact .whatsapp {
+body #header .contact .whatsapp, body #header-mobile .contact .whatsapp {
   padding-left: 20px;
 }
-body #header .contact .whatsapp:before {
+body #header .contact .whatsapp:before, body #header-mobile .contact .whatsapp:before {
   content: " ";
   display: inline-block;
   background-image: url("../images/icons/whatsapp-glyph-black.svg");
@@ -156,10 +159,10 @@ body #header .contact .whatsapp:before {
   vertical-align: text-bottom;
   margin-right: 20px;
 }
-body #header .contact .clock {
+body #header .contact .clock, body #header-mobile .contact .clock {
   margin-right: 20px;
 }
-body #header .contact .clock:before {
+body #header .contact .clock:before, body #header-mobile .contact .clock:before {
   content: " ";
   display: inline-block;
   background-image: url("../images/icons/clock.svg");
@@ -170,7 +173,7 @@ body #header .contact .clock:before {
   vertical-align: text-bottom;
   margin-right: 5px;
 }
-body #header #headerbackground {
+body #header #headerbackground, body #header-mobile #headerbackground {
   pointer-events: none;
   height: 400px;
   background-repeat: no-repeat;
@@ -178,19 +181,19 @@ body #header #headerbackground {
   background-position: center;
   margin-top: -20px;
 }
-body #header #headerbackground .overlay {
+body #header #headerbackground .overlay, body #header-mobile #headerbackground .overlay {
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 25%, #000);
   width: 100%;
   height: 100%;
 }
-body #header .headercontent {
+body #header .headercontent, body #header-mobile .headercontent {
   width: 100%;
   height: auto;
   margin-top: -430px;
   position: relative;
   padding-top: 200px;
 }
-body #header .headercontent.more-margin-top {
+body #header .headercontent.more-margin-top, body #header-mobile .headercontent.more-margin-top {
   margin-top: -500px;
 }
 
@@ -204,6 +207,31 @@ body #header .headercontent.more-margin-top {
   .sticky {
     height: 74px;
   }
+}
+
+#headerbackground-mobile {
+  pointer-events: none;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -20px;
+}
+#headerbackground-mobile .overlay {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 25%, #000);
+  width: 100%;
+  height: 100%;
+}
+
+.headercontent-mobile {
+  width: 100%;
+  height: auto;
+  margin-top: -430px;
+  position: relative;
+  padding-top: 200px;
+}
+.headercontent-mobile.more-margin-top {
+  margin-top: -500px;
 }
 
 #menucontainer {
@@ -625,6 +653,10 @@ a:hover {
   .posts-grid .single-post {
     margin-right: auto;
     margin-left: auto;
+  }
+  .posts-grid .single-post.sub-page-element {
+    margin-right: 1.5rem !important;
+    margin-left: 1.5rem !important;
   }
 }
 .posts-grid .single-post a {
@@ -1088,6 +1120,19 @@ p.email:before {
   .notfound-lottie {
     width: 200px;
   }
+}
+
+.sub-page-element {
+  margin-right: 20px;
+}
+@media screen and (max-width: 992px) {
+  .sub-page-element {
+    width: auto !important;
+  }
+}
+
+.topheader {
+  pointer-events: all;
 }
 
 #servicebar {

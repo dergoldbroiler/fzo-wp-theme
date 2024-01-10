@@ -1,6 +1,6 @@
 
 
-<div class="single-post bg-white modal-trigger">
+<div class="single-post bg-white modal-trigger sub-page-element">
     <?php if( has_post_thumbnail( $args->ID )): 
           $image = wp_get_attachment_image_src( get_post_thumbnail_id( $args->ID ), 'full' )[0];    
     ?>

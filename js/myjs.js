@@ -65,7 +65,7 @@ const wehiko = () => {
 const stickyMenu = () => {
   let windowWidth = window.innerWidth;
 
-  const menu = document.querySelector('#menucontainer');
+  const menu = document.querySelector('#header #menucontainer');
 
   const headerHeight = header.offsetHeight;
   const scrollPosition = document.body.scrollTop;
