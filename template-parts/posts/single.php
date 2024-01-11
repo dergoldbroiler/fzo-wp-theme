@@ -1,6 +1,5 @@
 
-
-<div class="single-post bg-white glide__track" class="" data-glide-el="track">
+<div class="single-post bg-white glide__track" class="" onclick="location.href='<?php echo $args['link']; ?>'">
    
         <?php if(isset($args['bild'])): ?>
 
