@@ -1,5 +1,5 @@
 
-<div class="single-post bg-white glide__track" class="" onclick="location.href='<?php echo $args['link']; ?>'">
+<div class="single-post bg-white glide__track" class="" onclick="location.href='<?php echo $args['link']['url']; ?>'">
    
         <?php if(isset($args['bild'])): ?>
 
