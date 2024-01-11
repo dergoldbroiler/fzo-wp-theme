@@ -137,11 +137,11 @@ document.addEventListener('DOMContentLoaded', function(e) {
  //setSlickSlider('.ads');
 
   if(document.querySelector('#team')) {
-    setSlickSlider('#team');
+ //   setSlickSlider('#team');
   }
 
   if(document.querySelector('#subpages')) {
-    setSlickSlider('#subpages');
+ //   setSlickSlider('#subpages');
   }
 });
 
@@ -151,11 +151,11 @@ window.addEventListener('resize', function(e) {
   
 
   if(document.querySelector('#team')) {
-    setSlickSlider('#team');
+ //   setSlickSlider('#team');
   }
 
   if(document.querySelector('#subpages')) {
-    setSlickSlider('#subpages');
+//    setSlickSlider('#subpages');
   }
 });
 

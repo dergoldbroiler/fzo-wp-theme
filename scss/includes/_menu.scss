@@ -47,6 +47,9 @@
                     font-size: 15px;
                     padding: 20px 30px;
                 }
+                @media (max-width:1200px) {
+                    font-size: 21px;
+                }
                 &:before{
                     background-repeat: no-repeat;
                     width: 26px;
@@ -60,8 +63,12 @@
                     content:' ';
                     display: inline-block;
 
-                    @media (max-width:1400px) {
-                       
+                    @media (max-width:1200px) {
+                       width: 40px;
+                       vertical-align: baseline;
+                  
+                        background-size: 80% !important;  
+                     
                     }
                 }
 
@@ -76,7 +83,14 @@
                     &:before{
                         background-image: url('../images/icons/fahrzeuge_icon.svg');
                         background-size: 23.8px 13.5px;  
-                        display: inline-block;        
+                        display: inline-block;   
+                        @media (max-width:1200px) {
+                            width: 40px;
+                            vertical-align: middle;
+                       
+                             background-size: 80% !important;  
+                          
+                         }     
                     }
                   
                 }

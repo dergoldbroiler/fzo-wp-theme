@@ -33,36 +33,7 @@
 
 </header>
 
-<div class="w-100 d-block d-xl-none" id="headerbackground-mobile" style="background-image:url('<?php echo $backgroundimage; ?>')">
-    <div class="overlay"></div>
-    </div>
-        <div class="headercontent-mobile  d-block d-xl-none<?php if(get_post_meta($post->ID, 'headerinhalt', true)): ?>more-margin-top<?php endif; ?>">
 
-            <div class="container py-4 px-4 px-xl-0" id="header-inner-content-container">
-                <div class="row">
-                    <div class="col-12">
-                        <h1 class="white fs36 topline"><?php the_title(); ?></h1>
-                        <h2 class="white fs36"><?php echo get_post_meta($post->ID, 'subtitle', true); ?></h2>
-                    </div>
-                </div>
-
-                <?php if(get_post_meta($post->ID, 'headerinhalt', true)): ?>
-                
-
-                <div class="row">
-                    <div class="col-12 p-0 mt-5">
-                        <div class="w-100 bg-white px-5 py-4">
-                            <?php if(get_post_meta($post->ID, 'headeruberschrift', true)): ?>
-                            <h3 class="fs18 fw500 pt-4"><?php echo get_post_meta($post->ID, 'headeruberschrift', true); ?></h3>
-                            <?php endif; ?>
-                        </div>
-                       <?php echo apply_filters('the_content', get_post_meta($post->ID, 'headerinhalt', true)); ?>
-                    </div>
-                </div>
-
-                <?php endif; ?>
-            </div>
-        </div>
 
 
 <header class="container-fluid w-100 p-0 d-none d-xl-block" id="header">
