@@ -1156,6 +1156,10 @@ p.email:before {
   pointer-events: all;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 #servicebar {
   box-shadow: 0 33px 36px 0 rgba(93, 108, 123, 0.08);
   background: white;
