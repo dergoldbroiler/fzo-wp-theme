@@ -1,4 +1,4 @@
-<div class="container m-auto p-0 m-0 footer-menu-row footer-menu-row-items">
+<div class="container m-auto p-0 m-0 d-none d-lg-block footer-menu-row footer-menu-row-items">
     <div class="row">
         <div class="col-12 ">
 
@@ -8,7 +8,7 @@
                 
                 </div>      
                 <div class="menufooter">
-                <ul id="footermenu" class="p-0 m-0"><li  class="p-0 m-0"><a href="/datenschutz" class="text-white" aria-current="page">Datenschutz</a></li><li class=""><a href="/impressum"  class="text-white" aria-current="page">Impressum</a></li>
+                <ul id="footermenu" class="p-0 m-0 d-flex" style="list-style:none"><li  class="p-0 m-0 me-5"><a href="/datenschutz" class="text-white" aria-current="page">Datenschutz</a></li><li class=""><a href="/impressum"  class="text-white" aria-current="page">Impressum</a></li>
 </ul>
                      
                 </div>

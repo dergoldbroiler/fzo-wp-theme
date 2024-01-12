@@ -29,12 +29,19 @@
         </div>
     </div>  
     <div class="w-100 bg-darkblue d-flex flex-column-reverse flex-lg-column rowmargin m60 mb-0">
-
+    <div class="menufooter ps-4 d-flex d-lg-none m-0">
+                <ul id="footermenu" class="p-0 m-0 mb-5 d-flex" style="list-style:none"><li  class="p-0 m-0 me-5"><a href="/datenschutz" class="text-white" aria-current="page">Datenschutz</a></li><li class=""><a href="/impressum"  class="text-white" aria-current="page">Impressum</a></li>
+</ul>
+                     
+                </div>
 
         <?php get_template_part('template-parts/footer/firstline'); ?>
         <?php get_template_part('template-parts/footer/secondline'); ?>
         <?php get_template_part('template-parts/footer/thirdline'); ?>
+
+
     </div>  
+    
 </footer>
 
 
