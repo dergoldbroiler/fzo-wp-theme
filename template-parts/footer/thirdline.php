@@ -8,7 +8,7 @@
                 
                 </div>      
                 <div class="menufooter">
-                <ul id="footermenu" class="p-0 m-0"><li  class="p-0 m-0"><a href="/datenschutz" class="text-white" aria-current="page">Datenschutz</a></li><li class=""><a href="/impressum" aria-current="page">Impressum</a></li>
+                <ul id="footermenu" class="p-0 m-0"><li  class="p-0 m-0"><a href="/datenschutz" class="text-white" aria-current="page">Datenschutz</a></li><li class=""><a href="/impressum"  class="text-white" aria-current="page">Impressum</a></li>
 </ul>
                      
                 </div>
