@@ -33,7 +33,7 @@
 
         <?php get_template_part('template-parts/footer/firstline'); ?>
         <?php get_template_part('template-parts/footer/secondline'); ?>
-
+        <?php get_template_part('template-parts/footer/thirdline'); ?>
     </div>  
 </footer>
 
