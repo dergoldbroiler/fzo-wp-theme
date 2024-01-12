@@ -231,7 +231,7 @@ body {
 
 
 
-#headerbackground-mobile {
+#headerbackground-mobile,#headerbackground {
     pointer-events: none;
     height: 400px;
     background-repeat: no-repeat;
@@ -247,7 +247,7 @@ body {
     
 
 }
-    .headercontent-mobile {
+    .headercontent-mobile,.headercontent {
         width:100%;
         height:auto;
         margin-top: -430px;
