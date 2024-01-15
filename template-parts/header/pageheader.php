@@ -16,10 +16,10 @@
 
           
          <div class="col-9 col-xl-3">
-                <a href="/" class="d-none d-xl-block">
+                <a href="/" class="d-none d-xl-block" style="position:relative;z-index:999">
                     <img  src="<?php bloginfo('stylesheet_directory'); ?>/images/FZ_Olpe_Logo.svg" alt="Autohaus Löhr, Fahrzeugzentrum Olpe" class="img-fluid" id="top-logo"/>
                 </a>
-                <a href="/" class="d-block d-xl-none">
+                <a href="/" class="d-block d-xl-none" style="position:relative;z-index:999">
                     <img  src="<?php bloginfo('stylesheet_directory'); ?>/images/FZ_Olpe_Logo_mobile.svg" alt="Autohaus Löhr, Fahrzeugzentrum Olpe" class="img-fluid" id="top-logo"/>
                 </a>
             </div>
