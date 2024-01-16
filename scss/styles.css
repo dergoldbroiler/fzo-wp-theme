@@ -96,7 +96,7 @@ body h1.fw600, body h2.fw600, body h3.fw600, body h4.fw600 {
 body h1 .inforow, body h2 .inforow, body h3 .inforow, body h4 .inforow {
   letter-spacing: 0.64px;
 }
-body h1 a, body h2 a, body h3 a, body h4 a {
+body h1 a.beige, body h2 a.beige, body h3 a.beige, body h4 a.beige {
   color: #e8a422 !important;
 }
 body #page-wrap {
