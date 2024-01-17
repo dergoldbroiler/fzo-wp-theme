@@ -301,18 +301,19 @@ body #header .headercontent.more-margin-top, body #header-mobile .headercontent.
   height: 26px;
   /* vertical-align: sub; */
   margin-right: 10px;
-  line-height: 26px;
+  line-height: 27px;
   vertical-align: middle;
   position: relative;
-  top: 3px;
+  top: -1px;
   content: " ";
   display: inline-block;
 }
 @media (max-width: 1200px) {
   #menucontainer ul li a:before {
     width: 40px;
-    vertical-align: baseline;
-    background-size: 80% !important;
+    height: 27px;
+    vertical-align: bottom;
+    background-size: 50% !important;
   }
 }
 #menucontainer ul li a:hover {
@@ -348,6 +349,11 @@ body #header .headercontent.more-margin-top, body #header-mobile .headercontent.
   background-size: 25.8px 14.9px;
   display: inline-block;
 }
+@media (max-width: 1200px) {
+  #menucontainer ul li.felge a:before {
+    background-size: 65% !important;
+  }
+}
 #menucontainer ul li.felge:hover a:before, #menucontainer ul li.felge.current-menu-item a:before {
   background-image: url("../images/icons/felge_icon_white.svg");
   display: inline-block;
@@ -365,6 +371,11 @@ body #header .headercontent.more-margin-top, body #header-mobile .headercontent.
   background-image: url("../images/icons/aufbereitung_icon.svg");
   background-size: 25.8px 14.9px;
   display: inline-block;
+}
+@media (max-width: 1200px) {
+  #menucontainer ul li.aufbereitung a:before {
+    background-size: 55% !important;
+  }
 }
 #menucontainer ul li.aufbereitung:hover a:before {
   background-image: url("../images/icons/aufbereitung_icon_white.svg");

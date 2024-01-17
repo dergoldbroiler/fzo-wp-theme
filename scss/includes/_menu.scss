@@ -56,18 +56,18 @@
                     height: 26px;
                     /* vertical-align: sub; */
                     margin-right: 10px;
-                    line-height: 26px;
+                    line-height: 27px;
                     vertical-align: middle;
                     position: relative;
-                    top: 3px;   
+                    top: -1px;   
                     content:' ';
                     display: inline-block;
 
                     @media (max-width:1200px) {
-                       width: 40px;
-                       vertical-align: baseline;
+                       width: 40px;height:27px;
+                       vertical-align: bottom;
                   
-                        background-size: 80% !important;  
+                        background-size: 50% !important;  
                      
                     }
                 }
@@ -126,7 +126,13 @@
                 a{
                     &:before{
                         background-image: url('../images/icons/felge.svg');
-                        background-size: 25.8px 14.9px;       display: inline-block;;           
+                        background-size: 25.8px 14.9px;       display: inline-block;;      
+                        
+                    @media (max-width:1200px) {
+                      
+                         background-size: 65% !important;  
+                      
+                     }     
                     }
                 }
 
@@ -163,7 +169,14 @@
                 a{
                     &:before{
                         background-image: url('../images/icons/aufbereitung_icon.svg');
-                        background-size: 25.8px 14.9px;        display: inline-block;;          
+                        background-size: 25.8px 14.9px;        display: inline-block;;       
+                        
+                    @media (max-width:1200px) {
+                        
+                   
+                         background-size: 55% !important;  
+                      
+                     }   
                     }
                 }
 
