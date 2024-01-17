@@ -304,7 +304,7 @@ body #header .headercontent.more-margin-top, body #header-mobile .headercontent.
   line-height: 27px;
   vertical-align: middle;
   position: relative;
-  top: -1px;
+  top: 2px;
   content: " ";
   display: inline-block;
 }
@@ -313,6 +313,7 @@ body #header .headercontent.more-margin-top, body #header-mobile .headercontent.
     width: 40px;
     height: 27px;
     vertical-align: bottom;
+    top: -1px;
     background-size: 50% !important;
   }
 }
@@ -326,9 +327,8 @@ body #header .headercontent.more-margin-top, body #header-mobile .headercontent.
 }
 @media (max-width: 1200px) {
   #menucontainer ul li.car a:before {
-    width: 40px;
-    vertical-align: middle;
-    background-size: 80% !important;
+    background-size: 75% !important;
+    top: 5px;
   }
 }
 #menucontainer ul li.car:hover a:before, #menucontainer ul li.car.current-menu-item a:before {
@@ -337,8 +337,13 @@ body #header .headercontent.more-margin-top, body #header-mobile .headercontent.
 }
 #menucontainer ul li.service a:before {
   background-image: url("../images/icons/Service_icon.svg");
-  background-size: 25.8px 14.9px;
+  background-size: 25.8px 14.9px !important;
   display: inline-block;
+}
+@media (max-width: 1200px) {
+  #menucontainer ul li.service a:before {
+    background-size: 55% !important;
+  }
 }
 #menucontainer ul li.service:hover a:before, #menucontainer ul li.service.current-menu-item a:before {
   background-image: url("../images/icons/Service_icon_white.svg");
@@ -346,7 +351,7 @@ body #header .headercontent.more-margin-top, body #header-mobile .headercontent.
 }
 #menucontainer ul li.felge a:before {
   background-image: url("../images/icons/felge.svg");
-  background-size: 25.8px 14.9px;
+  background-size: 25.8px 14.9px !important;
   display: inline-block;
 }
 @media (max-width: 1200px) {
@@ -360,8 +365,13 @@ body #header .headercontent.more-margin-top, body #header-mobile .headercontent.
 }
 #menucontainer ul li.beschichtung a:before {
   background-image: url("../images/icons/Beschichtung_icon.svg");
-  background-size: 25.8px 14.9px;
+  background-size: 25.8px 14.9px !important;
   display: inline-block;
+}
+@media (max-width: 1200px) {
+  #menucontainer ul li.beschichtung a:before {
+    background-size: 50% !important;
+  }
 }
 #menucontainer ul li.beschichtung:hover a:before, #menucontainer ul li.beschichtung.current-menu-item a:before {
   background-image: url("../images/icons/Beschichtung_icon_white.svg");
@@ -369,12 +379,12 @@ body #header .headercontent.more-margin-top, body #header-mobile .headercontent.
 }
 #menucontainer ul li.aufbereitung a:before {
   background-image: url("../images/icons/aufbereitung_icon.svg");
-  background-size: 25.8px 14.9px;
+  background-size: 25.8px 14.9px !important;
   display: inline-block;
 }
 @media (max-width: 1200px) {
   #menucontainer ul li.aufbereitung a:before {
-    background-size: 55% !important;
+    background-size: 60% !important;
   }
 }
 #menucontainer ul li.aufbereitung:hover a:before {
@@ -383,8 +393,13 @@ body #header .headercontent.more-margin-top, body #header-mobile .headercontent.
 }
 #menucontainer ul li.kontakt a:before {
   background-image: url("../images/icons/Kontakt_icon.svg");
-  background-size: 25.8px 14.9px;
+  background-size: 25.8px 14.9px !important;
   display: inline-block;
+}
+@media (max-width: 1200px) {
+  #menucontainer ul li.kontakt a:before {
+    background-size: 50% !important;
+  }
 }
 #menucontainer ul li.kontakt:hover a:before, #menucontainer ul li.kontakt.current-menu-item a:before {
   background-image: url("../images/icons/Kontakt_icon_white.svg");

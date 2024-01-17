@@ -19,6 +19,19 @@
 <?php endif; ?>
 
 
+<?php if(is_page('kontakt')) : ?>
+    <div class="container-fluid w-100 bg-lightgrey  p-0 mb-5">
+        <div class="container p-0" id="creditform">   
+            <div class="row">
+                <div class="col-12">
+                    <?php  echo do_shortcode('[contactform id="3"]'); ?>
+                </div>
+            </div>
+        </div>  
+       
+    </div>
+<?php endif; ?>
+
 
 <footer class="container-fluid w-100 bg-1 p-0 mb-0">
     <div class="container p-3 p-lg-0" id="footercontact">   

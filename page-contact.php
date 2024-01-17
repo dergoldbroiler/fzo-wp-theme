@@ -16,4 +16,4 @@
 
 </div>
 
-<?php get_footer('contact'); ?>
+<?php get_footer(); ?>

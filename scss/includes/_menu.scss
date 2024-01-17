@@ -59,14 +59,15 @@
                     line-height: 27px;
                     vertical-align: middle;
                     position: relative;
-                    top: -1px;   
+                    
+                    top: 2px;   
                     content:' ';
                     display: inline-block;
 
                     @media (max-width:1200px) {
                        width: 40px;height:27px;
                        vertical-align: bottom;
-                  
+                       top: -1px; 
                         background-size: 50% !important;  
                      
                     }
@@ -85,12 +86,12 @@
                         background-size: 23.8px 13.5px;  
                         display: inline-block;   
                         @media (max-width:1200px) {
-                            width: 40px;
-                            vertical-align: middle;
-                       
-                             background-size: 80% !important;  
-                          
-                         }     
+                      
+                            background-size: 75% !important;  
+                            top:5px
+                         
+                        }   
+                 
                     }
                   
                 }
@@ -99,7 +100,7 @@
                     a{
                     &:before{
                         background-image: url('../images/icons/fahrzeuge_icon_white.svg');         
-                        display: inline-block;;
+                        display: inline-block;
                     }
                 }
                 }
@@ -109,7 +110,12 @@
                 a{
                     &:before{
                         background-image: url('../images/icons/Service_icon.svg');
-                        background-size: 25.8px 14.9px;         display: inline-block;;         
+                        background-size: 25.8px 14.9px !important;          display: inline-block;;         
+                        @media (max-width:1200px) {
+                      
+                            background-size: 55% !important;  
+                         
+                        }   
                     }
                 }
                 &:hover , &.current-menu-item{
@@ -126,7 +132,7 @@
                 a{
                     &:before{
                         background-image: url('../images/icons/felge.svg');
-                        background-size: 25.8px 14.9px;       display: inline-block;;      
+                        background-size: 25.8px 14.9px !important;        display: inline-block;;      
                         
                     @media (max-width:1200px) {
                       
@@ -151,7 +157,12 @@
                 a{
                     &:before{
                         background-image: url('../images/icons/Beschichtung_icon.svg');
-                        background-size: 25.8px 14.9px;       display: inline-block;;           
+                        background-size: 25.8px 14.9px !important;       display: inline-block;;           
+                        @media (max-width:1200px) {
+                      
+                            background-size: 50% !important;  
+                         
+                        }   
                     }
                 }
 
@@ -169,12 +180,12 @@
                 a{
                     &:before{
                         background-image: url('../images/icons/aufbereitung_icon.svg');
-                        background-size: 25.8px 14.9px;        display: inline-block;;       
+                        background-size: 25.8px 14.9px    !important;     display: inline-block;;       
                         
                     @media (max-width:1200px) {
                         
                    
-                         background-size: 55% !important;  
+                         background-size: 60% !important;  
                       
                      }   
                     }
@@ -194,7 +205,12 @@
                 a{
                     &:before{
                         background-image: url('../images/icons/Kontakt_icon.svg');
-                        background-size: 25.8px 14.9px;        display: inline-block;;          
+                        background-size: 25.8px 14.9px !important;         display: inline-block;;  
+                        @media (max-width:1200px) {
+                      
+                            background-size: 50% !important;  
+                         
+                        }           
                     }
                 }
 
