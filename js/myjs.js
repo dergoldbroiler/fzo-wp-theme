@@ -68,10 +68,10 @@ const stickyMenu = () => {
   const menu = document.querySelector('#header #menucontainer');
 
   const headerHeight = header.offsetHeight;
-  const scrollPosition = document.body.scrollTop;
+  const scrollPosition = window.scrollY;
 
   let sticker = menu;
-
+console.log(scrollPosition);
  
   if(windowWidth > 1200) {
     if (scrollPosition > 100) {
@@ -164,3 +164,7 @@ document.body.addEventListener('scroll', function(e) {
   stickyMenu();
 });
 
+
+window.addEventListener('scroll', function(e) { 
+  stickyMenu();
+})

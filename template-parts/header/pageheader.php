@@ -43,7 +43,7 @@
 
     
 
-    <div class="container py-4 px-4 px-xl-0" id="header-inner-container">
+    <div class="container py-4 px-4 px-xl-0" id="header-inner-container header-inner-desktop">
         <div class="row">
 
           
