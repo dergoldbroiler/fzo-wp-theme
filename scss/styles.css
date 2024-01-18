@@ -363,31 +363,31 @@ body #header .headercontent.more-margin-top, body #header-mobile .headercontent.
   background-image: url("../images/icons/felge_icon_white.svg");
   display: inline-block;
 }
-#menucontainer ul li.beschichtung a:before {
+#menucontainer ul li.aufbereitung a:before {
   background-image: url("../images/icons/Beschichtung_icon.svg");
   background-size: 25.8px 14.9px !important;
   display: inline-block;
 }
 @media (max-width: 1200px) {
-  #menucontainer ul li.beschichtung a:before {
+  #menucontainer ul li.aufbereitung a:before {
     background-size: 50% !important;
   }
 }
-#menucontainer ul li.beschichtung:hover a:before, #menucontainer ul li.beschichtung.current-menu-item a:before {
+#menucontainer ul li.aufbereitung:hover a:before, #menucontainer ul li.aufbereitung.current-menu-item a:before {
   background-image: url("../images/icons/Beschichtung_icon_white.svg");
   display: inline-block;
 }
-#menucontainer ul li.aufbereitung a:before {
+#menucontainer ul li.beschichtung a:before {
   background-image: url("../images/icons/aufbereitung_icon.svg");
   background-size: 25.8px 14.9px !important;
   display: inline-block;
 }
 @media (max-width: 1200px) {
-  #menucontainer ul li.aufbereitung a:before {
+  #menucontainer ul li.beschichtung a:before {
     background-size: 60% !important;
   }
 }
-#menucontainer ul li.aufbereitung:hover a:before {
+#menucontainer ul li.beschichtung:hover a:before {
   background-image: url("../images/icons/aufbereitung_icon_white.svg");
   display: inline-block;
 }
@@ -761,6 +761,11 @@ a:hover {
 }
 .posts-grid .single-post .single-post-content.subpage-content .teaser {
   height: 140px;
+}
+@media (max-width: 992px) {
+  .posts-grid .single-post .single-post-content.subpage-content .teaser {
+    height: auto;
+  }
 }
 .posts-grid .single-post .imagecontainer {
   width: 100%;

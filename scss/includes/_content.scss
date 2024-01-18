@@ -151,6 +151,10 @@ a{
             &.subpage-content{
                 .teaser {
                     height: 140px;
+
+                    @media(max-width:992px) {
+                        height: auto;
+                    }
                 }
                 height: auto;
             }
