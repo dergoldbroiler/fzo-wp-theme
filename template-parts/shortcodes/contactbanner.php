@@ -11,6 +11,7 @@
             <?php if(isset($args['teaser'])) : ?>
                 <p class="banner-paragraph"><?php echo $args['teaser']; ?></p>
             <?php endif; ?>    
+            
             <?php if(isset($args['url'])) : ?>
             <a class="banner-button" href="<?php echo $args['url']; ?>">Mehr über uns</a>
             <?php endif; ?> 
