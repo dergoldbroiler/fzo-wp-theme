@@ -1,3 +1,5 @@
+<?php print_r($args); ?>
+
 <div class="w-100 bg-white mt-5 ps-lg-5" id="contact-banner">
 <div class="d-flex flex-column-reverse flex-lg-row h-100">
 
