@@ -6,7 +6,9 @@
     $subpages = get_pages(
         array(
             'parent' => $post->ID,
-            'posts_per_page' => '-1'
+            'posts_per_page' => '-1',
+            'order' => 'ASC',
+            'orderby' => 'date'
         )
     );
 
