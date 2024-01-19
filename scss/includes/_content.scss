@@ -466,6 +466,21 @@ a{
 }
 
 p {
+
+    &.telefon{
+    
+        &:before{
+            content:' ';
+            display: inline-block;
+            background-image: url('../images/icons/phone.svg'); 
+            background-size: 17.1px 17.1px;
+            background-repeat: no-repeat;
+            width:17px;
+            height:17px;
+            vertical-align: text-bottom;
+            margin-right: 10px;
+        }
+    }
     &.whatsapp{
       
         &:before{
@@ -480,6 +495,7 @@ p {
             margin-right: 10px;
         }
     }
+    
 
     &.email{
     

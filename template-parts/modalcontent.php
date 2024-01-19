@@ -18,7 +18,8 @@
 
         <p class="pt-4 w-100 text-center">Telefonisch / WhatsApp:</p>
         <div class="modal-contact w-50 m-auto pb-5 text-center">
-<p class="whatsapp"><a href="https://wa.me/4915735980000" target="_blank" class="text-decoration-none">02761/ 82870</a></p>
+        <p class="telefon"><a href="tel://0049276182870" target="_blank" class="text-decoration-none">02761/ 82870</a></p>
+<p class="whatsapp"><a href="https://wa.me/0049276182870" target="_blank" class="text-decoration-none">02761/ 82870</a></p>
 <p class="email"><a href="mailto:info@fz-olpe.de" target="_blank" class="text-decoration-none">info@fz-olpe.de</a></p>
 </div>
   

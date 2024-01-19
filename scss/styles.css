@@ -162,6 +162,20 @@ body #header .contact .whatsapp:before, body #header-mobile .contact .whatsapp:b
   vertical-align: text-bottom;
   margin-right: 20px;
 }
+body #header .contact .telefon, body #header-mobile .contact .telefon {
+  padding-left: 20px;
+}
+body #header .contact .telefon:before, body #header-mobile .contact .telefon:before {
+  content: " ";
+  display: inline-block;
+  background-image: url("../images/icons/phone.svg");
+  background-size: 17.1px 17.1px;
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 17px;
+  vertical-align: text-bottom;
+  margin-right: 20px;
+}
 body #header .contact .clock, body #header-mobile .contact .clock {
   margin-right: 20px;
 }
@@ -1042,6 +1056,17 @@ a.icon-arrow-white:before {
   }
 }
 
+p.telefon:before {
+  content: " ";
+  display: inline-block;
+  background-image: url("../images/icons/phone.svg");
+  background-size: 17.1px 17.1px;
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 17px;
+  vertical-align: text-bottom;
+  margin-right: 10px;
+}
 p.whatsapp:before {
   content: " ";
   display: inline-block;
