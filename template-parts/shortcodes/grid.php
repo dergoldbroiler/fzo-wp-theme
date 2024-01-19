@@ -3,12 +3,14 @@
 
 <?php
 
-    $subpages = get_pages(
+    $subpages = get_posts(
         array(
             'parent' => $post->ID,
-            'posts_per_page' => '20',
+            'posts_per_page' => '-1',
             'order' => 'DESC',
-            'sort_order' => 'DESC',
+            'post_type' => 'page',
+            'post_parent' => $post->ID,
+            'orderby' => 'date'
 
         )
     );
