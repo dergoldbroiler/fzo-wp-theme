@@ -9,7 +9,7 @@
             'posts_per_page' => '20',
             'order' => 'DESC',
             'sort_order' => 'DESC',
-            'orderby' => 'date'
+
         )
     );
 
