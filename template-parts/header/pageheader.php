@@ -55,7 +55,7 @@
                     <img  src="<?php bloginfo('stylesheet_directory'); ?>/images/FZ_Olpe_Logo_mobile.svg" alt="Autohaus Löhr, Fahrzeugzentrum Olpe" class="img-fluid" id="top-logo"/>
                 </a>
             </div>
-            <div class="col-3 offset-xl-3 col-xl-6">
+            <div class="col-3 offset-xxl-3 col-xl-9 col-xxl-6">
                 <?php get_template_part('template-parts/header/contact','',array()) ?>
                 <?php get_template_part('template-parts/header/menubars','',array()) ?>
             </div>
