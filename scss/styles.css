@@ -155,12 +155,12 @@ body #header .contact .whatsapp:before, body #header-mobile .contact .whatsapp:b
   content: " ";
   display: inline-block;
   background-image: url("../images/icons/whatsapp-glyph-black.svg");
-  background-size: 20.1px 20.1px;
+  background-size: 20.2px 20.4px;
   background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  vertical-align: bottom;
-  margin-right: 20px;
+  width: 20.2px;
+  height: 20.4px;
+  vertical-align: middle;
+  margin-right: 15px;
 }
 body #header .contact .telefon, body #header-mobile .contact .telefon {
   padding-left: 20px;
@@ -1071,11 +1071,11 @@ p.whatsapp:before {
   content: " ";
   display: inline-block;
   background-image: url("../images/icons/whatsapp-glyph-black.svg");
-  background-size: 20.1px 20.1px;
+  background-size: 20.2px 20.4px;
   background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  vertical-align: bottom;
+  width: 20.2px;
+  height: 20.4px;
+  vertical-align: middle;
   margin-right: 10px;
 }
 p.email:before {
