@@ -378,7 +378,7 @@ body #header .headercontent.more-margin-top, body #header-mobile .headercontent.
   display: inline-block;
 }
 #menucontainer ul li.aufbereitung a:before {
-  background-image: url("../images/icons/Beschichtung_icon.svg");
+  background-image: url("../images/icons/aufbereitung_icon.svg");
   background-size: 25.8px 14.9px !important;
   display: inline-block;
 }
@@ -388,11 +388,11 @@ body #header .headercontent.more-margin-top, body #header-mobile .headercontent.
   }
 }
 #menucontainer ul li.aufbereitung:hover a:before, #menucontainer ul li.aufbereitung.current-menu-item a:before {
-  background-image: url("../images/icons/Beschichtung_icon_white.svg");
+  background-image: url("../images/icons/aufbereitung_icon_white.svg");
   display: inline-block;
 }
 #menucontainer ul li.beschichtung a:before {
-  background-image: url("../images/icons/aufbereitung_icon.svg");
+  background-image: url("../images/icons/Beschichtung_icon.svg");
   background-size: 25.8px 14.9px !important;
   display: inline-block;
 }
@@ -402,7 +402,7 @@ body #header .headercontent.more-margin-top, body #header-mobile .headercontent.
   }
 }
 #menucontainer ul li.beschichtung:hover a:before {
-  background-image: url("../images/icons/aufbereitung_icon_white.svg");
+  background-image: url("../images/icons/Beschichtung_icon_white.svg");
   display: inline-block;
 }
 #menucontainer ul li.kontakt a:before {
