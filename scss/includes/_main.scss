@@ -32,7 +32,13 @@ body {
     .bg-lightgrey{
         background-color: rgb(3, 34, 62, .03)
     }
+    h1{
+        font-size:40px;
 
+        @media screen and (max-width: 768px) {
+            font-size: 30px;            
+        }
+    }
     h1, h2, h3, h4 {
         font-family: 'BarlowBold';
 

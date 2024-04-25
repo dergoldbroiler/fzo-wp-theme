@@ -44,6 +44,14 @@ body .bg-darkblue {
 body .bg-lightgrey {
   background-color: rgba(3, 34, 62, 0.03);
 }
+body h1 {
+  font-size: 40px;
+}
+@media screen and (max-width: 768px) {
+  body h1 {
+    font-size: 30px;
+  }
+}
 body h1, body h2, body h3, body h4 {
   font-family: "BarlowBold";
 }
