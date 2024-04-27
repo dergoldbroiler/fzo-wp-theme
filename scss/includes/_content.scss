@@ -658,3 +658,11 @@ p {
 .cursor-pointer{
     cursor: pointer;
 }
+
+.wp-block-column h2 {
+    font-size: 26px;
+    @media screen and (max-width: 992px) {
+        font-size: 22px;
+        
+    }
+}
