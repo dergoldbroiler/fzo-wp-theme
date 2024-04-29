@@ -4,11 +4,11 @@
         <div class="partner-content content-40 h-100 d-flex justify-content-center flex-column px-5 py-5 py-lg-0">
 
         <?php 
-            $bagdeline = "Ihr Partner wenn’s ums Auto geht";
+            $subline = "Ihr Partner wenn’s ums Auto geht";
             if(isset($args['subline'])) : 
-                $bagdeline = $args['subline'];
+                $subline = $args['subline'];
              endif; ?>   
-            <div class="badgeline"><?= $badgeline ?></div>
+            <div class="badgeline"><?php echo $subline; ?></div>
 
             <?php if(isset($args['headline'])) : ?>
                 <h2 class="text-start"><?php echo $args['headline']; ?></h2>
