@@ -8,7 +8,7 @@
             if(isset($args['subline'])) : 
                 $bagdeline = $args['subline'];
              endif; ?>   
-            <div class="badgeline"><?= $badgeline; ?></div>
+            <div class="badgeline"><?= $badgeline ?></div>
 
             <?php if(isset($args['headline'])) : ?>
                 <h2 class="text-start"><?php echo $args['headline']; ?></h2>
